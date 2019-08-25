@@ -1,25 +1,70 @@
 <template>
   <v-app dark>
     <v-navigation-drawer permanent app>
-      <v-layout column align-center>
-        <v-btn @click="$vuetify.goTo('#about')">
-          About me
-        </v-btn>
-        <v-btn @click="$vuetify.goTo('#education')">
-          Education
-        </v-btn>
-        <v-btn @click="$vuetify.goTo('#experience')">
-          Skills & Experience
-        </v-btn>
-        <v-btn @click="$vuetify.goTo('#projects')">
-          Projects
-        </v-btn>
-        <v-btn @click="$vuetify.goTo('#references')">
-          References
-        </v-btn>
-        <v-btn @click="$vuetify.goTo('#contact')">
-          Contact
-        </v-btn>
+      <v-layout column align-center pa- 5>
+        <v-flex py-5>
+          <v-layout column align-center>
+            <v-avatar class="my-5" size="96">
+              <img
+                src="https://media.licdn.com/dms/image/C4E03AQGanWRnMeHX1A/profile-displayphoto-shrink_200_200/0?e=1572480000&v=beta&t=VpPXLIOWk34f9RVZ-d9ndzj1wKrlXd81ThdnNJHdSb8"
+                alt="Alfredo">
+            </v-avatar>
+            <div class="title primary--text">Alfredo Baquedano</div>
+            <span class="subtitle">Full-stack Developer</span>
+          </v-layout>
+        </v-flex>
+        <v-flex py-5>
+          <v-layout column align-center>
+            <v-flex py-3>
+              <v-btn
+                text
+                color="primary"
+                @click="$vuetify.goTo('#about')">
+                About me
+              </v-btn>
+            </v-flex>
+            <v-flex py-3>
+              <v-btn
+                text
+                color="primary"
+                @click="$vuetify.goTo('#education')">
+                Edaucation
+              </v-btn>
+            </v-flex>
+            <v-flex py-3>
+              <v-btn
+                text
+                color="primary"
+                @click="$vuetify.goTo('#experience')">
+                Skills & Experience
+              </v-btn>
+            </v-flex>
+            <v-flex py-3>
+              <v-btn
+                text
+                color="primary"
+                @click="$vuetify.goTo('#projects')">
+                Projects
+              </v-btn>
+            </v-flex>
+            <v-flex py-3>
+              <v-btn
+                text
+                color="primary"
+                @click="$vuetify.goTo('#references')">
+                References
+              </v-btn>
+            </v-flex>
+            <v-flex py-3>
+              <v-btn
+                text
+                color="primary"
+                @click="$vuetify.goTo('#contact')">
+                Contact
+              </v-btn>
+            </v-flex> 
+          </v-layout>
+        </v-flex>
       </v-layout>
     </v-navigation-drawer>
     <v-content>
