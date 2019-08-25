@@ -46,12 +46,12 @@
 </template>
 
 <script>
-import Projects from '@/views/Projects'
-import About from '@/views/About'
-import Education from '@/views/Education'
-import Experience from '@/views/Experience'
-import References from '@/views/References'
-import Contact from '@/views/Contact'
+import Projects from '@/views/Projects.vue';
+import About from '@/views/About.vue';
+import Education from '@/views/Education.vue';
+import Experience from '@/views/Experience.vue';
+import References from '@/views/References.vue';
+import Contact from '@/views/Contact.vue';
 
 export default {
   name: 'App',
@@ -61,12 +61,12 @@ export default {
     Education,
     Experience,
     References,
-    Contact
+    Contact,
   },
-  data () {
+  data() {
     return {
       //
-    }
-  }
-}
+    };
+  },
+};
 </script>

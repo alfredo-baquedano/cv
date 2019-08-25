@@ -13,7 +13,7 @@ export default new Vuex.Store({
         phone_number: '+569 8443 3012',
         linkedin: undefined,
         github: undefined,
-        facebook: undefined
+        facebook: undefined,
       },
       experiences: [],
       skills: [],
