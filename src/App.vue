@@ -27,16 +27,16 @@
               <v-btn
                 text
                 color="primary"
-                @click="$vuetify.goTo('#education')">
-                Edaucation
+                @click="$vuetify.goTo('#experience')">
+                Experience
               </v-btn>
             </v-flex>
             <v-flex py-3>
               <v-btn
                 text
                 color="primary"
-                @click="$vuetify.goTo('#experience')">
-                Skills & Experience
+                @click="$vuetify.goTo('#education')">
+                Skills & Edaucation
               </v-btn>
             </v-flex>
             <v-flex py-3>
@@ -71,11 +71,11 @@
       <v-layout pa-5 id="about">
         <About/>
       </v-layout>
-      <v-layout pa-5 id="education">
-        <Education/>
-      </v-layout>
       <v-layout pa-5 id="experience">
         <Experience/>
+      </v-layout>
+      <v-layout pa-5 id="education">
+        <Education/>
       </v-layout>
       <v-layout pa-5 id="projects">
         <Projects/>
