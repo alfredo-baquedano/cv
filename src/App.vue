@@ -62,7 +62,7 @@
                 @click="$vuetify.goTo('#contact')">
                 Contact
               </v-btn>
-            </v-flex> 
+            </v-flex>
           </v-layout>
         </v-flex>
       </v-layout>
