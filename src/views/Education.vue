@@ -6,7 +6,7 @@
       </v-col>
       <v-divider inset vertical/>
       <v-col cols="5">
-        <h3 class="headline">Front-End WEB</h3>
+        <h3 class="headline">Frontend Web</h3>
         <v-row class="pa-5" justify="start">
           <v-col cols="auto" class="pa-5">
             <v-progress-circular
@@ -31,7 +31,7 @@
             </v-progress-circular>
           </v-col>
         </v-row>
-        <h3 class="headline">Front-End Mobile</h3>
+        <h3 class="headline">Frontend Mobile</h3>
         <v-row class="pa-5" justify="start">
           <v-col cols="auto" class="pa-5">
             <v-progress-circular
@@ -56,7 +56,7 @@
             </v-progress-circular>
           </v-col>
         </v-row>
-        <h3 class="headline">BackEnd-End</h3>
+        <h3 class="headline">Backend</h3>
         <v-row class="pa-5" justify="start">
           <v-col cols="auto" class="pa-5">
             <v-progress-circular
