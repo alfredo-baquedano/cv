@@ -59,54 +59,80 @@ export default new Vuex.Store({
       ],
       skills: [
         {
-          name: 'Backend1',
+          name: 'FrontEnd Web',
           knowledges: [
             {
-              name: 'Express1',
-              value: 23,
+              name: 'Vue.js',
+              value: 88,
             },
             {
-              name: 'Lumen1',
+              name: 'React',
+              value: 75,
+            },
+          ],
+        },
+        {
+          name: 'FrontEnd Mobile',
+          knowledges: [
+            {
+              name: 'React\nNative',
+              value: 57,
+            },
+            {
+              name: 'Java',
+              value: 60,
+            },
+          ],
+        },
+        {
+          name: 'BackEnd',
+          knowledges: [
+            {
+              name: 'Lumen',
+              value: 64,
+            },
+            {
+              name: 'Express',
+              value: 30,
+            },
+          ],
+        },
+        {
+          name: 'SGBD',
+          knowledges: [
+            {
+              name: 'MySQL',
+              value: 64,
+            },
+            {
+              name: 'MongoDB',
+              value: 34,
+            },
+          ],
+        },
+        {
+          name: 'Other Programming Languages',
+          knowledges: [
+            {
+              name: 'Java',
+              value: 65,
+            },
+            {
+              name: 'Python',
               value: 23,
             },
           ],
         },
         {
-          name: 'Backend2',
+          name: 'Other Skills',
           knowledges: [
             {
-              name: 'Express2',
-              value: 23,
+              name: 'Git',
+              value: 78,
             },
             {
-              name: 'Lumen2',
-              value: 23,
-            },
-          ],
-        },
-        {
-          name: 'Backend3',
-          knowledges: [
-            {
-              name: 'Express3',
-              value: 23,
-            },
-            {
-              name: 'Lumen3',
-              value: 23,
-            },
-          ],
-        },
-        {
-          name: 'Backend4',
-          knowledges: [
-            {
-              name: 'Express4',
-              value: 23,
-            },
-            {
-              name: 'Lumen4',
-              value: 23,
+              name: 'Security',
+              value: 43,
             },
           ],
         },
