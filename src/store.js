@@ -57,7 +57,60 @@ export default new Vuex.Store({
           description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.',
         },
       ],
-      skills: [],
+      skills: [
+        {
+          name: 'Backend1',
+          knowledges: [
+            {
+              name: 'Express1',
+              value: 23,
+            },
+            {
+              name: 'Lumen1',
+              value: 23,
+            },
+          ],
+        },
+        {
+          name: 'Backend2',
+          knowledges: [
+            {
+              name: 'Express2',
+              value: 23,
+            },
+            {
+              name: 'Lumen2',
+              value: 23,
+            },
+          ],
+        },
+        {
+          name: 'Backend3',
+          knowledges: [
+            {
+              name: 'Express3',
+              value: 23,
+            },
+            {
+              name: 'Lumen3',
+              value: 23,
+            },
+          ],
+        },
+        {
+          name: 'Backend4',
+          knowledges: [
+            {
+              name: 'Express4',
+              value: 23,
+            },
+            {
+              name: 'Lumen4',
+              value: 23,
+            },
+          ],
+        },
+      ],
       projects: [],
     },
   },
