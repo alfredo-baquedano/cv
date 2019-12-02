@@ -17,12 +17,15 @@
             </template>
             <template v-slot:opposite>
               <span
-                :class="`headline font-weight-bold ${'primary'/*experience.company.color*/}--text`">
+                :class="`headline font-weight-bold primary--text`">
                 {{experience.year}}
               </span>
             </template>
             <v-card class="py-4">
-              <v-card-title :class="`headline font-weight-light mb-4 ${'primary'/*experience.company.color*/}--text`">{{experience.position}}</v-card-title>
+              <v-card-title
+                :class="`headline font-weight-light mb-4 primary--text`">
+                {{experience.position}}
+              </v-card-title>
               <v-card-text>
                 {{experience.description}}
               </v-card-text>
