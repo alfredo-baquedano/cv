@@ -7,8 +7,9 @@ export default new Vuex.Store({
   state: {
     person: {
       contactInfo: {
-        first_name: 'Alfredo',
-        last_name: 'Baquedano',
+        image: 'assets/alfredo.jpg',
+        firstName: 'Alfredo',
+        lastName: 'Baquedano',
         email: 'alfredo.baquedano.c@gmal.com',
         phone_number: '+569 8443 3012',
         linkedin: undefined,
@@ -138,6 +139,44 @@ export default new Vuex.Store({
         },
       ],
       projects: [],
+      references: [
+        {
+          author: {
+            firstName: 'Carlos',
+            lastName: 'Araneda1',
+            position: '',
+            image: 'img/alfredo.jpg',
+          },
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+        {
+          author: {
+            firstName: 'Carlos',
+            lastName: 'Araneda1',
+            position: '',
+            image: 'img/alfredo.jpg',
+          },
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+        {
+          author: {
+            firstName: 'Carlos',
+            lastName: 'Araneda1',
+            position: '',
+            image: 'img/alfredo.jpg',
+          },
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+        {
+          author: {
+            firstName: 'Carlos',
+            lastName: 'Araneda1',
+            position: '',
+            image: 'img/alfredo.jpg',
+          },
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+      ],
     },
   },
 });
