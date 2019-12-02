@@ -6,7 +6,7 @@
           <v-layout column align-center>
             <v-avatar class="my-5" size="96">
               <img
-                src="https://media.licdn.com/dms/image/C4E03AQGanWRnMeHX1A/profile-displayphoto-shrink_200_200/0?e=1572480000&v=beta&t=VpPXLIOWk34f9RVZ-d9ndzj1wKrlXd81ThdnNJHdSb8"
+                :src="'img/alfredo.jpg'"
                 alt="Alfredo">
             </v-avatar>
             <div class="title primary--text">Alfredo Baquedano</div>
