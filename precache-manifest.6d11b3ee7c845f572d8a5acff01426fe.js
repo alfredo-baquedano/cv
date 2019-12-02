@@ -1,18 +1,18 @@
 self.__precacheManifest = [
   {
-    "revision": "d411bc1f4a25f2aca2a1",
-    "url": "/resume/css/app.a046991e.css"
+    "revision": "b31142ea7bbbfe783242",
+    "url": "/resume/css/app.2dd56fff.css"
   },
   {
-    "revision": "d411bc1f4a25f2aca2a1",
-    "url": "/resume/js/app.118a9922.js"
+    "revision": "b31142ea7bbbfe783242",
+    "url": "/resume/js/app.d48a6454.js"
   },
   {
-    "revision": "cf434ab7cc5906797c27",
-    "url": "/resume/css/chunk-vendors.4c0229f8.css"
+    "revision": "77f88822825fa3e29648",
+    "url": "/resume/css/chunk-vendors.f18a1d28.css"
   },
   {
-    "revision": "cf434ab7cc5906797c27",
+    "revision": "77f88822825fa3e29648",
     "url": "/resume/js/chunk-vendors.d836f4f8.js"
   },
   {
@@ -36,16 +36,16 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-Thin.ad538a69.woff2"
   },
   {
+    "revision": "90d1676003d9c28c04994c18bfd8b558",
+    "url": "/resume/fonts/Roboto-Medium.90d16760.woff2"
+  },
+  {
     "revision": "d26871e8149b5759f814fd3c7a4f784b",
     "url": "/resume/fonts/Roboto-Light.d26871e8.woff2"
   },
   {
     "revision": "73f0a88bbca1bec19fb1303c689d04c6",
     "url": "/resume/fonts/Roboto-Regular.73f0a88b.woff2"
-  },
-  {
-    "revision": "90d1676003d9c28c04994c18bfd8b558",
-    "url": "/resume/fonts/Roboto-Medium.90d16760.woff2"
   },
   {
     "revision": "b52fac2bb93c5858f3f2675e4b52e1de",
@@ -72,12 +72,12 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-MediumItalic.13ec0eb5.woff2"
   },
   {
-    "revision": "f75569f8a5fab0893fa712d8c0d9c3fe",
-    "url": "/resume/fonts/Roboto-BlackItalic.f75569f8.woff2"
-  },
-  {
     "revision": "94008e69aaf05da75c0bbf8f8bb0db41",
     "url": "/resume/fonts/Roboto-BoldItalic.94008e69.woff2"
+  },
+  {
+    "revision": "f75569f8a5fab0893fa712d8c0d9c3fe",
+    "url": "/resume/fonts/Roboto-BlackItalic.f75569f8.woff2"
   },
   {
     "revision": "d3b47375afd904983d9be8d6e239a949",
@@ -96,40 +96,44 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-Medium.1d659482.woff"
   },
   {
-    "revision": "13efe6cbc10b97144a28310ebdeda594",
-    "url": "/resume/fonts/Roboto-LightItalic.13efe6cb.woff"
-  },
-  {
-    "revision": "83e114c316fcc3f23f524ec3e1c65984",
-    "url": "/resume/fonts/Roboto-MediumItalic.83e114c3.woff"
-  },
-  {
-    "revision": "8a96edbbcd9a6991d79371aed0b0288e",
-    "url": "/resume/fonts/Roboto-ThinItalic.8a96edbb.woff"
-  },
-  {
     "revision": "50d75e48e0a3ddab1dd15d6bfb9d3700",
     "url": "/resume/fonts/Roboto-Bold.50d75e48.woff"
-  },
-  {
-    "revision": "4fe0f73cc919ba2b7a3c36e4540d725c",
-    "url": "/resume/fonts/Roboto-BoldItalic.4fe0f73c.woff"
-  },
-  {
-    "revision": "f5902d5ef961717ed263902fc429e6ae",
-    "url": "/resume/fonts/Roboto-RegularItalic.f5902d5e.woff"
-  },
-  {
-    "revision": "cc2fadc3928f2f223418887111947b40",
-    "url": "/resume/fonts/Roboto-BlackItalic.cc2fadc3.woff"
   },
   {
     "revision": "313a65630d341645c13e4f2a0364381d",
     "url": "/resume/fonts/Roboto-Black.313a6563.woff"
   },
   {
-    "revision": "b482695c6298e553c0d439f11aebe30d",
+    "revision": "8a96edbbcd9a6991d79371aed0b0288e",
+    "url": "/resume/fonts/Roboto-ThinItalic.8a96edbb.woff"
+  },
+  {
+    "revision": "13efe6cbc10b97144a28310ebdeda594",
+    "url": "/resume/fonts/Roboto-LightItalic.13efe6cb.woff"
+  },
+  {
+    "revision": "f5902d5ef961717ed263902fc429e6ae",
+    "url": "/resume/fonts/Roboto-RegularItalic.f5902d5e.woff"
+  },
+  {
+    "revision": "83e114c316fcc3f23f524ec3e1c65984",
+    "url": "/resume/fonts/Roboto-MediumItalic.83e114c3.woff"
+  },
+  {
+    "revision": "4fe0f73cc919ba2b7a3c36e4540d725c",
+    "url": "/resume/fonts/Roboto-BoldItalic.4fe0f73c.woff"
+  },
+  {
+    "revision": "cc2fadc3928f2f223418887111947b40",
+    "url": "/resume/fonts/Roboto-BlackItalic.cc2fadc3.woff"
+  },
+  {
+    "revision": "163b675f3d1560cae97cf7722f146631",
     "url": "/resume/index.html"
+  },
+  {
+    "revision": "ab3b390fb2c22f1c717fbdbf73cbf17a",
+    "url": "/resume/img/alfredo.jpg"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
