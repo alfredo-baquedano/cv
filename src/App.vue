@@ -56,6 +56,11 @@
       </v-row>
     </v-navigation-drawer>
     <v-content>
+      <v-img
+        style="height: 100vh"
+        src="img/background2.jpg"
+        gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)">
+      </v-img>
       <About class="ma-10" id="about"/>
       <Experience class="ma-10" id="experience"/>
       <Education class="ma-10" id="education"/>
