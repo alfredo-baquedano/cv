@@ -3,6 +3,19 @@
     <h1 class="display-1">Skills & Education</h1>
     <v-row no-gutters justify="space-around">
       <v-col cols="5" class="ma-12">
+        <v-alert
+          border="left"
+          colored-border
+          color="primary"
+          elevation="2"
+          v-for="(education, index) in educations"
+          :key="index"
+          :icon="education.type"
+          prominent
+        >
+          <p class="subtitle-2">{{education.name}}</p>
+          <p class="caption">{{education.description}}</p>
+        </v-alert>
       </v-col>
       <v-divider inset vertical class="ma-5"/>
       <v-col cols="5" class="ma-12">
@@ -44,6 +57,7 @@ import { mapState } from 'vuex';
 export default {
   computed: mapState({
     skills: state => state.person.skills,
+    educations: state => state.person.education,
   }),
 };
 </script>

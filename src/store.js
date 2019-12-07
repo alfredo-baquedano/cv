@@ -139,6 +139,32 @@ export default new Vuex.Store({
         },
       ],
       projects: [],
+      education: [
+        {
+          name: 'Lorem ipsum',
+          type: 'mdi-school',
+          date: '',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+        {
+          name: 'Lorem ipsum',
+          type: 'mdi-school',
+          date: '',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+        {
+          name: 'Lorem ipsum',
+          type: 'mdi-certificate',
+          date: '',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+        {
+          name: 'Lorem ipsum',
+          type: 'mdi-certificate',
+          date: '',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices',
+        },
+      ],
       references: [
         {
           author: {
