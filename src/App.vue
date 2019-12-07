@@ -1,91 +1,67 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer permanent app>
-      <v-layout column align-center pa- 5>
-        <v-flex py-5>
-          <v-layout column align-center>
-            <v-avatar class="my-5" size="96">
-              <img
-                :src="'img/alfredo.jpg'"
-                alt="Alfredo">
-            </v-avatar>
-            <div class="title primary--text">Alfredo Baquedano</div>
-            <span class="subtitle">Full-stack Developer</span>
-          </v-layout>
-        </v-flex>
-        <v-flex py-5>
-          <v-layout column align-center>
-            <v-flex py-3>
-              <v-btn
-                text
-                color="primary"
-                @click="$vuetify.goTo('#about')">
-                About me
-              </v-btn>
-            </v-flex>
-            <v-flex py-3>
-              <v-btn
-                text
-                color="primary"
-                @click="$vuetify.goTo('#experience')">
-                Experience
-              </v-btn>
-            </v-flex>
-            <v-flex py-3>
-              <v-btn
-                text
-                color="primary"
-                @click="$vuetify.goTo('#education')">
-                Skills & Edaucation
-              </v-btn>
-            </v-flex>
-            <v-flex py-3>
-              <v-btn
-                text
-                color="primary"
-                @click="$vuetify.goTo('#projects')">
-                Projects
-              </v-btn>
-            </v-flex>
-            <v-flex py-3>
-              <v-btn
-                text
-                color="primary"
-                @click="$vuetify.goTo('#references')">
-                References
-              </v-btn>
-            </v-flex>
-            <v-flex py-3>
-              <v-btn
-                text
-                color="primary"
-                @click="$vuetify.goTo('#contact')">
-                Contact
-              </v-btn>
-            </v-flex>
-          </v-layout>
-        </v-flex>
-      </v-layout>
+    <v-navigation-drawer class="navigation-drawer-gradint" color="primary" app>
+      <v-row justify="center" no-gutters class="pa-5">
+        <v-avatar class="my-4" size="96">
+          <img
+            :src="'img/alfredo.jpg'"
+            alt="Alfredo">
+        </v-avatar>
+        <v-row justify="center" class="my-4">
+          <span class="title white--text">Alfredo Baquedano</span><br/>
+          <span class="subtitle white--text">Full-stack Developer</span>
+        </v-row>
+        <v-btn
+          class="my-4"
+          text
+          color="white"
+          @click="$vuetify.goTo('#about')">
+          About me
+        </v-btn>
+        <v-btn
+          class="my-4"
+          text
+          color="white"
+          @click="$vuetify.goTo('#experience')">
+          Experience
+        </v-btn>
+        <v-btn
+          class="my-4"
+          text
+          color="white"
+          @click="$vuetify.goTo('#education')">
+          Skills & Edaucation
+        </v-btn>
+        <v-btn
+          class="my-4"
+          text
+          color="white"
+          @click="$vuetify.goTo('#projects')">
+          Projects
+        </v-btn>
+        <v-btn
+          class="my-4"
+          text
+          color="white"
+          @click="$vuetify.goTo('#references')">
+          References
+        </v-btn>
+        <v-btn
+          class="my-4"
+          text
+          color="white"
+          @click="$vuetify.goTo('#contact')">
+          Contact
+        </v-btn>
+      </v-row>
     </v-navigation-drawer>
     <v-content>
-      <v-layout pa-5 id="about">
-        <About/>
-      </v-layout>
-      <v-layout pa-5 id="experience">
-        <Experience/>
-      </v-layout>
-      <v-layout pa-5 id="education">
-        <Education/>
-      </v-layout>
-      <v-layout pa-5 id="projects">
-        <Projects/>
-      </v-layout>
-      <v-layout pa-5 id="references">
-        <References/>
-      </v-layout>
-      <v-layout pa-5 id="contact">
-        <Contact/>
-      </v-layout>
+      <About class="ma-10" id="about"/>
+      <Experience class="ma-10" id="experience"/>
+      <Education class="ma-10" id="education"/>
+      <Projects class="ma-10" id="projects"/>
+      <References class="ma-10" id="references"/>
+      <Contact class="ma-10" id="contact"/>
     </v-content>
   </v-app>
 </template>
@@ -115,3 +91,10 @@ export default {
   },
 };
 </script>
+<style>
+/*
+.navigation-drawer-gradint {
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71)
+}
+*/
+</style>
