@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b31142ea7bbbfe783242",
-    "url": "/resume/css/app.2dd56fff.css"
+    "revision": "26e7d26572add359268f",
+    "url": "/resume/css/app.584297e1.css"
   },
   {
-    "revision": "b31142ea7bbbfe783242",
-    "url": "/resume/js/app.d48a6454.js"
+    "revision": "26e7d26572add359268f",
+    "url": "/resume/js/app.c7a91740.js"
   },
   {
-    "revision": "77f88822825fa3e29648",
+    "revision": "61089fb2db12a63c6aeb",
     "url": "/resume/css/chunk-vendors.f18a1d28.css"
   },
   {
-    "revision": "77f88822825fa3e29648",
-    "url": "/resume/js/chunk-vendors.d836f4f8.js"
+    "revision": "61089fb2db12a63c6aeb",
+    "url": "/resume/js/chunk-vendors.8d7e3a32.js"
   },
   {
     "revision": "c61b9c12f68ee1ba045a4b49dba29ca5",
@@ -24,20 +24,16 @@ self.__precacheManifest = [
     "url": "/resume/fonts/materialdesignicons-webfont.ff13d121.woff"
   },
   {
-    "revision": "541e65fb46e44ecdf7a9da8a9b881446",
-    "url": "/resume/fonts/materialdesignicons-webfont.541e65fb.eot"
-  },
-  {
     "revision": "fc03f7f15facede623faa7666c7d1f5a",
     "url": "/resume/fonts/materialdesignicons-webfont.fc03f7f1.ttf"
   },
   {
-    "revision": "ad538a69b0e8615ed0419c4529344ffc",
-    "url": "/resume/fonts/Roboto-Thin.ad538a69.woff2"
+    "revision": "541e65fb46e44ecdf7a9da8a9b881446",
+    "url": "/resume/fonts/materialdesignicons-webfont.541e65fb.eot"
   },
   {
-    "revision": "90d1676003d9c28c04994c18bfd8b558",
-    "url": "/resume/fonts/Roboto-Medium.90d16760.woff2"
+    "revision": "ad538a69b0e8615ed0419c4529344ffc",
+    "url": "/resume/fonts/Roboto-Thin.ad538a69.woff2"
   },
   {
     "revision": "d26871e8149b5759f814fd3c7a4f784b",
@@ -46,6 +42,10 @@ self.__precacheManifest = [
   {
     "revision": "73f0a88bbca1bec19fb1303c689d04c6",
     "url": "/resume/fonts/Roboto-Regular.73f0a88b.woff2"
+  },
+  {
+    "revision": "90d1676003d9c28c04994c18bfd8b558",
+    "url": "/resume/fonts/Roboto-Medium.90d16760.woff2"
   },
   {
     "revision": "b52fac2bb93c5858f3f2675e4b52e1de",
@@ -96,16 +96,12 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-Medium.1d659482.woff"
   },
   {
-    "revision": "50d75e48e0a3ddab1dd15d6bfb9d3700",
-    "url": "/resume/fonts/Roboto-Bold.50d75e48.woff"
-  },
-  {
-    "revision": "313a65630d341645c13e4f2a0364381d",
-    "url": "/resume/fonts/Roboto-Black.313a6563.woff"
-  },
-  {
     "revision": "8a96edbbcd9a6991d79371aed0b0288e",
     "url": "/resume/fonts/Roboto-ThinItalic.8a96edbb.woff"
+  },
+  {
+    "revision": "50d75e48e0a3ddab1dd15d6bfb9d3700",
+    "url": "/resume/fonts/Roboto-Bold.50d75e48.woff"
   },
   {
     "revision": "13efe6cbc10b97144a28310ebdeda594",
@@ -120,6 +116,10 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-MediumItalic.83e114c3.woff"
   },
   {
+    "revision": "313a65630d341645c13e4f2a0364381d",
+    "url": "/resume/fonts/Roboto-Black.313a6563.woff"
+  },
+  {
     "revision": "4fe0f73cc919ba2b7a3c36e4540d725c",
     "url": "/resume/fonts/Roboto-BoldItalic.4fe0f73c.woff"
   },
@@ -128,7 +128,7 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-BlackItalic.cc2fadc3.woff"
   },
   {
-    "revision": "163b675f3d1560cae97cf7722f146631",
+    "revision": "8b2bfce5e21dfc64dd335f52cd66d7f6",
     "url": "/resume/index.html"
   },
   {
@@ -138,5 +138,13 @@ self.__precacheManifest = [
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/resume/robots.txt"
+  },
+  {
+    "revision": "c605149464693d072d4e2e15aba48ece",
+    "url": "/resume/img/background.jpg"
+  },
+  {
+    "revision": "62c5c69d8ee0f3d1bdf62b26c917bd59",
+    "url": "/resume/img/background2.jpg"
   }
 ];
