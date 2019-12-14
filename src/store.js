@@ -168,8 +168,8 @@ export default new Vuex.Store({
       references: [
         {
           author: {
-            firstName: 'Carlos',
-            lastName: 'Araneda1',
+            firstName: 'Lorem',
+            lastName: 'ipsum',
             position: '',
             image: 'img/alfredo.jpg',
           },
@@ -177,8 +177,8 @@ export default new Vuex.Store({
         },
         {
           author: {
-            firstName: 'Carlos',
-            lastName: 'Araneda1',
+            firstName: 'Lorem',
+            lastName: 'ipsum',
             position: '',
             image: 'img/alfredo.jpg',
           },
@@ -186,8 +186,8 @@ export default new Vuex.Store({
         },
         {
           author: {
-            firstName: 'Carlos',
-            lastName: 'Araneda1',
+            firstName: 'Lorem',
+            lastName: 'ipsum',
             position: '',
             image: 'img/alfredo.jpg',
           },
@@ -195,8 +195,8 @@ export default new Vuex.Store({
         },
         {
           author: {
-            firstName: 'Carlos',
-            lastName: 'Araneda1',
+            firstName: 'Lorem',
+            lastName: 'ipsum',
             position: '',
             image: 'img/alfredo.jpg',
           },

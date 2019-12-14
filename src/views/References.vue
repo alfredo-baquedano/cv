@@ -8,8 +8,8 @@
       show-arrows>
       <v-slide-item
         class="ma-10"
-        v-for="reference in references"
-        :key="reference.author"
+        v-for="(reference, index) in references"
+        :key="index"
         v-slot:default="{ active, toggle }"
       >
         <v-card
