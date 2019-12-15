@@ -49,9 +49,9 @@
           <v-card-text>
             <v-list dense color="transparent">
               <v-list-item>
-                <v-list-item-icon>
+                <v-list-item-avatar>
                   <v-icon color="primary">mdi-email</v-icon>
-                </v-list-item-icon>
+                </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>
                     Email
@@ -62,9 +62,9 @@
                 </v-list-item-content>
               </v-list-item>
               <v-list-item>
-                <v-list-item-icon>
+                <v-list-item-avatar>
                   <v-icon color="primary">mdi-phone</v-icon>
-                </v-list-item-icon>
+                </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>
                     Phone
@@ -75,9 +75,9 @@
                 </v-list-item-content>
               </v-list-item>
               <v-list-item>
-                <v-list-item-icon>
+                <v-list-item-avatar>
                   <v-icon color="primary">mdi-map-marker</v-icon>
-                </v-list-item-icon>
+                </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>
                     Address
