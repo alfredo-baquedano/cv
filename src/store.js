@@ -11,11 +11,14 @@ export default new Vuex.Store({
         firstName: 'Alfredo',
         lastName: 'Baquedano',
         email: 'alfredo.baquedano.c@gmal.com',
-        phone_number: '+569 8443 3012',
+        phone: '+569 8443 3012',
+        address: 'Manuel Bayón 3273, Talcahuano, Chile',
+        dateOfBirth: '05/06/1993',
         linkedin: undefined,
         github: undefined,
         facebook: undefined,
       },
+      profileInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu mi dapibus, varius purus vitae, dapibus nunc. Curabitur pellentesque varius ante interdum pellentesque. Aenean pretium sollicitudin augue quis gravida. Nunc a varius dolor. Duis at enim ante. Mauris id facilisis nisi. Maecenas sed bibendum sapien. In imperdiet ipsum magna, nec tincidunt tellus pulvinar et. Fusce sit amet porta elit, eget commodo massa. Duis viverra non mi in blandit. Nulla mollis dignissim sem ut sodales. Morbi faucibus leo massa.',
       experiences: [
         {
           year: '2018 - Now',

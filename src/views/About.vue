@@ -10,7 +10,7 @@
             Personal Profile
           </v-card-title>
           <v-card-text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu mi dapibus, varius purus vitae, dapibus nunc. Curabitur pellentesque varius ante interdum pellentesque. Aenean pretium sollicitudin augue quis gravida. Nunc a varius dolor. Duis at enim ante. Mauris id facilisis nisi. Maecenas sed bibendum sapien. In imperdiet ipsum magna, nec tincidunt tellus pulvinar et. Fusce sit amet porta elit, eget commodo massa. Duis viverra non mi in blandit. Nulla mollis dignissim sem ut sodales. Morbi faucibus leo massa.
+            {{ profileInfo }}
           </v-card-text>
         </v-card>
       </v-col>
@@ -30,7 +30,7 @@
                     Name
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.firstName + ' ' + contactInfo.lastName }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -43,7 +43,7 @@
                     Email
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.email }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -56,7 +56,7 @@
                     Phone
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.phone }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -69,7 +69,7 @@
                     Date of birth
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.dateOfBirth }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -82,7 +82,7 @@
                     Address
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.address }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -93,3 +93,13 @@
     </v-row>
   </div>
 </template>
+<script>
+import { mapState } from 'vuex';
+
+export default {
+  computed: mapState({
+    contactInfo: state => state.person.contactInfo,
+    profileInfo: state => state.person.profileInfo,
+  }),
+};
+</script>
