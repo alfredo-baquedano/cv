@@ -1,8 +1,8 @@
 <template>
   <div class="experience">
     <h1>Experience</h1>
-    <v-layout>
-      <v-flex md9 mx-auto pa-5>
+    <v-row justify="center">
+      <v-col cols="9" class="pa-5">
         <v-timeline>
           <v-timeline-item
             v-for="(experience, i) in experiences"
@@ -32,8 +32,8 @@
             </v-card>
           </v-timeline-item>
         </v-timeline>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </div>
 </template>
 <script>

@@ -2,7 +2,7 @@
   <div class="education" style="width: 100%">
     <h1 class="display-1">Skills & Education</h1>
     <v-row no-gutters justify="space-around">
-      <v-col cols="5" class="ma-12">
+      <v-col cols="5">
         <v-alert
           border="left"
           colored-border
@@ -18,7 +18,7 @@
         </v-alert>
       </v-col>
       <v-divider inset vertical class="ma-5"/>
-      <v-col cols="5" class="ma-12">
+      <v-col cols="5">
         <v-row no-gutters justify="space-around">
           <v-col
             cols="6"

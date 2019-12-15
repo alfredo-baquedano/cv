@@ -61,12 +61,12 @@
         src="img/background2.jpg"
         gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)">
       </v-img>
-      <About class="ma-10" id="about"/>
-      <Experience class="ma-10" id="experience"/>
-      <Education class="ma-10" id="education"/>
-      <Projects class="ma-10" id="projects"/>
-      <References class="ma-10" id="references"/>
-      <Contact class="ma-10" id="contact"/>
+      <About class="pa-10" id="about"/>
+      <Experience class="pa-10" id="experience"/>
+      <Education class="pa-10" id="education"/>
+      <Projects class="pa-10" id="projects"/>
+      <References class="pa-10" id="references"/>
+      <Contact class="pa-10" id="contact"/>
     </v-content>
   </v-app>
 </template>
