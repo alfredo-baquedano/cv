@@ -14,9 +14,6 @@
           :key="i">
           <v-row>
             <v-col>
-              <v-list>
-                
-              </v-list>
             </v-col>
             <v-col>
               <v-img></v-img>

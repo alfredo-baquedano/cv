@@ -99,7 +99,7 @@ export default {
           icon: 'mdi-email',
           nav: '#contact',
         },
-      ]
+      ],
     };
   },
 };

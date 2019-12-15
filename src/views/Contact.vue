@@ -47,7 +47,7 @@
             Contact info
           </v-card-title>
           <v-card-text>
-            <v-list dense color="transparent">  
+            <v-list dense color="transparent">
               <v-list-item>
                 <v-list-item-icon>
                   <v-icon color="primary">mdi-email</v-icon>
