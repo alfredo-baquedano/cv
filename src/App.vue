@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-navigation-drawer class="navigation-drawer-gradint" color="primary" app>
-      <v-row justify="center" no-gutters class="pa-5">
+      <v-row justify="center" no-gutters class="pt-5">
         <v-avatar class="my-4" size="96">
           <img
             :src="'img/alfredo.jpg'"
@@ -11,49 +11,25 @@
           <span class="title white--text">Alfredo Baquedano</span><br/>
           <span class="subtitle white--text">Full-stack Developer</span>
         </v-row>
-        <v-btn
-          class="my-4"
-          text
-          color="white"
-          @click="$vuetify.goTo('#about')">
-          About me
-        </v-btn>
-        <v-btn
-          class="my-4"
-          text
-          color="white"
-          @click="$vuetify.goTo('#experience')">
-          Experience
-        </v-btn>
-        <v-btn
-          class="my-4"
-          text
-          color="white"
-          @click="$vuetify.goTo('#education')">
-          Skills & Edaucation
-        </v-btn>
-        <v-btn
-          class="my-4"
-          text
-          color="white"
-          @click="$vuetify.goTo('#projects')">
-          Projects
-        </v-btn>
-        <v-btn
-          class="my-4"
-          text
-          color="white"
-          @click="$vuetify.goTo('#references')">
-          References
-        </v-btn>
-        <v-btn
-          class="my-4"
-          text
-          color="white"
-          @click="$vuetify.goTo('#contact')">
-          Contact
-        </v-btn>
       </v-row>
+      <v-list shaped dark dense class="pr-6">
+        <v-list-item-group
+          v-model="selectedSection"
+          active-class="active-nav">
+          <v-list-item
+            class="my-3 py-1"
+            v-for="(item, index) in sections"
+            :key="index"
+            @click="$vuetify.goTo(item.nav)">
+            <v-list-item-icon>
+              <v-icon v-text="item.icon"></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title v-text="item.text"></v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
     </v-navigation-drawer>
     <v-content>
       <v-img
@@ -91,12 +67,49 @@ export default {
   },
   data() {
     return {
-      //
+      selectedSection: undefined,
+      sections: [
+        {
+          text: 'About',
+          icon: 'mdi-account',
+          nav: '#about',
+        },
+        {
+          text: 'Experience',
+          icon: 'mdi-briefcase',
+          nav: '#experience',
+        },
+        {
+          text: 'Skills & Education',
+          icon: 'mdi-school',
+          nav: '#education',
+        },
+        {
+          text: 'Projects',
+          icon: 'mdi-file-document-box-multiple',
+          nav: '#projects',
+        },
+        {
+          text: 'References',
+          icon: 'mdi-format-quote-close',
+          nav: '#references',
+        },
+        {
+          text: 'Contact',
+          icon: 'mdi-email',
+          nav: '#contact',
+        },
+      ]
     };
   },
 };
 </script>
 <style>
+.active-nav {
+    background-color: rgb(255, 255, 255) !important;
+    color: var(--v-primary-base) !important;
+    opacity: 1 !important;
+}
 /*
 .navigation-drawer-gradint {
     background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71)
