@@ -108,7 +108,9 @@ export default {
 .active-nav {
     background-color: rgb(255, 255, 255) !important;
     color: var(--v-primary-base) !important;
-    opacity: 1 !important;
+}
+.theme--dark.v-list-item--active:before {
+    opacity: 0 !important;
 }
 /*
 .navigation-drawer-gradint {
