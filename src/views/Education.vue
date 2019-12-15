@@ -1,8 +1,10 @@
 <template>
   <div class="education" style="width: 100%">
-    <h1 class="display-1">Skills & Education</h1>
-    <v-row no-gutters justify="space-around">
-      <v-col cols="5">
+    <v-row justify="center">
+      <h1 class="display-1 mb-12">Skills & Education</h1>
+    </v-row>
+    <v-row no-gutters justify="space-around" class="px-12">
+      <v-col class="pa-12">
         <v-alert
           border="left"
           colored-border
@@ -17,8 +19,8 @@
           <p class="caption">{{education.description}}</p>
         </v-alert>
       </v-col>
-      <v-divider inset vertical class="ma-5"/>
-      <v-col cols="5">
+      <v-divider inset vertical/>
+      <v-col class="pa-12">
         <v-row no-gutters justify="space-around">
           <v-col
             cols="6"

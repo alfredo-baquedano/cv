@@ -1,5 +1,7 @@
 <template>
   <div class="about" style="height: 600px">
-    <h1>About placeholder</h1>
+    <v-row justify="center">
+      <h1 class="display-1 mb-12">About</h1>
+    </v-row>
   </div>
 </template>

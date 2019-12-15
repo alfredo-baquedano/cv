@@ -2,7 +2,9 @@
   <div
     class="reference"
     style="overflow-x: auto">
-    <h1>Reference placeholder</h1>
+    <v-row justify="center">
+      <h1 class="display-1 mb-12">References</h1>
+    </v-row>
     <v-slide-group
       multiple
       show-arrows>

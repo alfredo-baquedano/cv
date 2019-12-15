@@ -1,6 +1,8 @@
 <template>
   <div class="experience">
-    <h1>Experience</h1>
+    <v-row justify="center">
+      <h1 class="display-1 mb-12">Experience</h1>
+    </v-row>
     <v-row justify="center">
       <v-col cols="9" class="pa-5">
         <v-timeline>
