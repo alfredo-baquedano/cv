@@ -57,7 +57,7 @@
                     Email
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.email }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -70,7 +70,7 @@
                     Phone
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.phone }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -83,7 +83,7 @@
                     Address
                   </v-list-item-title>
                   <v-list-item-subtitle>
-                    Lorem ipsum
+                    {{ contactInfo.address }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -94,3 +94,12 @@
     </v-row>
   </div>
 </template>
+<script>
+import { mapState } from 'vuex';
+
+export default {
+  computed: mapState({
+    contactInfo: state => state.person.contactInfo,
+  }),
+};
+</script>
