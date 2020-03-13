@@ -14,6 +14,7 @@
       </v-row>
       <v-list shaped dark dense class="pr-6">
         <v-list-item-group
+          mandatory
           :value="selectedSection"
           active-class="active-nav">
           <v-list-item
@@ -111,21 +112,21 @@ export default {
     };
   },
   methods: {
-    onIntersect (entries, observer, isIntersecting) {
+    onIntersect(entries, observer, isIntersecting) {
       if (!this.disableIntersection) {
-        entries.forEach(entrie => {
-          this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio 
-        })
-        this.selectedSection = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)[0].id
+        entries.forEach((entrie) => {
+          this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio;
+        });
+        this.selectedSection = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)[0].id;
       }
     },
-    navToSection (id) {
-      this.disableIntersection = true
-      this.$vuetify.goTo('#'+id).then(()=>{
-        this.disableIntersection = false
-      })
-    }
-  }
+    navToSection(id) {
+      this.disableIntersection = true;
+      this.$vuetify.goTo(`#${id}`).then(() => {
+        this.disableIntersection = false;
+      });
+    },
+  },
 };
 </script>
 <style>
