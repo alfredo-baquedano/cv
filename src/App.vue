@@ -14,13 +14,14 @@
       </v-row>
       <v-list shaped dark dense class="pr-6">
         <v-list-item-group
-          v-model="selectedSection"
+          :value="selectedSection"
           active-class="active-nav">
           <v-list-item
             class="my-3 py-1"
-            v-for="(item, index) in sections"
-            :key="index"
-            @click="$vuetify.goTo(item.nav)">
+            v-for="(item) in sections"
+            :key="item.id"
+            :value="item.id"
+            @click="navToSection(item.id)">
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
@@ -37,12 +38,12 @@
         src="img/background2.jpg"
         gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)">
       </v-img>
-      <About class="pa-10" id="about"/>
-      <Experience class="pa-10" id="experience"/>
-      <Education class="pa-10" id="education"/>
-      <Projects class="pa-10" id="projects"/>
-      <References class="pa-10" id="references"/>
-      <Contact class="pa-10" id="contact"/>
+      <About v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="about"/>
+      <Experience v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="experience"/>
+      <Education v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="education"/>
+      <Projects v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="projects"/>
+      <References v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="references"/>
+      <Contact v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="contact"/>
     </v-content>
   </v-app>
 </template>
@@ -68,40 +69,63 @@ export default {
   data() {
     return {
       selectedSection: undefined,
+      disableIntersection: false,
       sections: [
         {
+          id: 'about',
           text: 'About',
           icon: 'mdi-account',
-          nav: '#about',
+          intersectRatio: 0,
         },
         {
+          id: 'experience',
           text: 'Experience',
           icon: 'mdi-briefcase',
-          nav: '#experience',
+          intersectRatio: 0,
         },
         {
+          id: 'education',
           text: 'Skills & Education',
           icon: 'mdi-school',
-          nav: '#education',
+          intersectRatio: 0,
         },
         {
+          id: 'projects',
           text: 'Projects',
           icon: 'mdi-file-document-box-multiple',
-          nav: '#projects',
+          intersectRatio: 0,
         },
         {
+          id: 'references',
           text: 'References',
           icon: 'mdi-format-quote-close',
-          nav: '#references',
+          intersectRatio: 0,
         },
         {
+          id: 'contact',
           text: 'Contact',
           icon: 'mdi-email',
-          nav: '#contact',
+          intersectRatio: 0,
         },
       ],
     };
   },
+  methods: {
+    onIntersect (entries, observer, isIntersecting) {
+      if (!this.disableIntersection) {
+        entries.forEach(entrie => {
+          this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio 
+        })
+        this.selectedSection = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)[0].id
+      }
+    },
+    navToSection (id) {
+      this.disableIntersection = true
+      this.$vuetify.goTo('#'+id).then(()=>{
+        this.disableIntersection = false
+      })
+    }
+  }
 };
 </script>
 <style>
