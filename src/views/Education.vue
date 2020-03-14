@@ -21,8 +21,14 @@
       </v-col>
       <v-divider inset vertical/>
       <v-col class="pa-12">
-        <v-row no-gutters justify="space-around">
+        <v-slide-x-transition
+          group
+          v-intersect="onSkillsIntersect"
+          no-gutters
+          justify="space-around"
+          tag="v-row">
           <v-col
+            v-show="areSkillsIntersecting"
             cols="6"
             class="pa-3"
             :key="skill.name"
@@ -48,7 +54,7 @@
               </v-col>
             </v-row>
           </v-col>
-        </v-row>
+        </v-slide-x-transition>
       </v-col>
     </v-row>
   </div>
@@ -57,10 +63,18 @@
 import { mapState } from 'vuex';
 
 export default {
+  data: () => ({
+    areSkillsIntersecting: true,
+  }),
   computed: mapState({
     skills: state => state.person.skills,
     educations: state => state.person.education,
   }),
+  methods: {
+    onSkillsIntersect (entries, observer) {
+      this.areSkillsIntersecting = entries[0].isIntersecting
+    },
+  },
 };
 </script>
 <style>
