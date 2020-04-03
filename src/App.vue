@@ -14,13 +14,15 @@
       </v-row>
       <v-list shaped dark dense class="pr-6">
         <v-list-item-group
-          v-model="selectedSection"
+          mandatory
+          :value="selectedSection"
           active-class="active-nav">
           <v-list-item
             class="my-3 py-1"
-            v-for="(item, index) in sections"
-            :key="index"
-            @click="$vuetify.goTo(item.nav)">
+            v-for="(item) in sections"
+            :key="item.id"
+            :value="item.id"
+            @click="navToSection(item.id)">
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
@@ -37,72 +39,95 @@
         src="img/background2.jpg"
         gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)">
       </v-img>
-      <About class="pa-10" id="about"/>
-      <Experience class="pa-10" id="experience"/>
-      <Education class="pa-10" id="education"/>
-      <Projects class="pa-10" id="projects"/>
-      <References class="pa-10" id="references"/>
-      <Contact class="pa-10" id="contact"/>
+      <About v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="about-section"/>
+      <Experience v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="experience-section"/>
+      <Education v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="education-section"/>
+      <Projects v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="projects-section"/>
+      <References v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="references-section"/>
+      <Contact v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="contact-section"/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Projects from '@/views/Projects.vue';
-import About from '@/views/About.vue';
-import Education from '@/views/Education.vue';
-import Experience from '@/views/Experience.vue';
-import References from '@/views/References.vue';
-import Contact from '@/views/Contact.vue';
+import Projects from '@/views/Projects.vue'
+import About from '@/views/About.vue'
+import Education from '@/views/Education.vue'
+import Experience from '@/views/Experience.vue'
+import References from '@/views/References.vue'
+import Contact from '@/views/Contact.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Projects,
-    About,
-    Education,
-    Experience,
-    References,
-    Contact,
-  },
-  data() {
-    return {
-      selectedSection: undefined,
-      sections: [
-        {
-          text: 'About',
-          icon: 'mdi-account',
-          nav: '#about',
+    name: 'App',
+    components: {
+        Projects,
+        About,
+        Education,
+        Experience,
+        References,
+        Contact
+    },
+    data () {
+        return {
+            selectedSection: undefined,
+            disableIntersection: false,
+            sections: [
+                {
+                    id: 'about-section',
+                    text: 'About',
+                    icon: 'mdi-account',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'experience-section',
+                    text: 'Experience',
+                    icon: 'mdi-briefcase',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'education-section',
+                    text: 'Skills & Education',
+                    icon: 'mdi-school',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'projects-section',
+                    text: 'Projects',
+                    icon: 'mdi-file-document-box-multiple',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'references-section',
+                    text: 'References',
+                    icon: 'mdi-format-quote-close',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'contact-section',
+                    text: 'Contact',
+                    icon: 'mdi-email',
+                    intersectRatio: 0
+                }
+            ]
+        }
+    },
+    methods: {
+        onIntersect (entries, observer, isIntersecting) {
+            if (!this.disableIntersection) {
+                entries.forEach((entrie) => {
+                    this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio
+                })
+                this.selectedSection = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)[0].id
+            }
         },
-        {
-          text: 'Experience',
-          icon: 'mdi-briefcase',
-          nav: '#experience',
-        },
-        {
-          text: 'Skills & Education',
-          icon: 'mdi-school',
-          nav: '#education',
-        },
-        {
-          text: 'Projects',
-          icon: 'mdi-file-document-box-multiple',
-          nav: '#projects',
-        },
-        {
-          text: 'References',
-          icon: 'mdi-format-quote-close',
-          nav: '#references',
-        },
-        {
-          text: 'Contact',
-          icon: 'mdi-email',
-          nav: '#contact',
-        },
-      ],
-    };
-  },
-};
+        navToSection (id) {
+            this.disableIntersection = true
+            this.$vuetify.goTo(`#${id}`).then(() => {
+                this.disableIntersection = false
+            })
+        }
+    }
+}
 </script>
 <style>
 .active-nav {

@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div>
     <v-row justify="center">
       <h1 class="display-1 mb-12">About</h1>
     </v-row>
@@ -94,12 +94,12 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapState } from 'vuex'
 
 export default {
-  computed: mapState({
-    contactInfo: state => state.person.contactInfo,
-    profileInfo: state => state.person.profileInfo,
-  }),
-};
+    computed: mapState({
+        contactInfo: state => state.person.contactInfo,
+        profileInfo: state => state.person.profileInfo
+    })
+}
 </script>

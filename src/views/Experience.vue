@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <div>
     <v-row justify="center">
       <h1 class="display-1 mb-12">Experience</h1>
     </v-row>
@@ -7,8 +7,11 @@
       <v-col cols="9" class="pa-5">
         <v-timeline>
           <v-timeline-item
-            v-for="(experience, i) in experiences"
-            :key="i"
+            v-for="(experience, index) in experiences"
+            :key="index"
+            :data-aos="(index % 2 === 0) ? 'fade-left' : 'fade-right'"
+            :data-aos-delay="index*150"
+            data-aos-anchor="#experience-section"
             :color="experience.company.color"
             small
           >
@@ -39,13 +42,13 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapState } from 'vuex'
 
 export default {
-  computed: mapState({
-    experiences: state => state.person.experiences,
-  }),
-};
+    computed: mapState({
+        experiences: state => state.person.experiences
+    })
+}
 </script>
 <style>
 /*
