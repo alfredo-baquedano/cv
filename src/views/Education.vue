@@ -1,5 +1,5 @@
 <template>
-    <div class="education" style="width: 100%">
+    <div style="width: 100%">
         <v-row justify="center">
         <h1 class="display-1 mb-12">Skills & Education</h1>
         </v-row>
@@ -8,7 +8,7 @@
             justify="space-around"
             class="px-12">
             <v-col
-                class="skills-item pa-12">
+                class="pa-12">
                 <v-alert
                     border="left"
                     colored-border
@@ -19,7 +19,7 @@
                     :icon="education.type"
                     data-aos="fade-right"
                     :data-aos-delay="index*100"
-                    data-aos-anchor=".skills-item"
+                    data-aos-anchor="#education-section"
                     prominent>
                 <p class="subtitle-2">{{education.name}}</p>
                 <p class="caption">{{education.description}}</p>
@@ -29,7 +29,6 @@
             <v-col
                 class="pa-12">
                 <v-row
-                class="education-item"
                 no-gutters
                 justify="space-around">
                 <v-col
@@ -39,7 +38,7 @@
                     v-for="(skill, index) in skills"
                     data-aos="fade-left"
                     :data-aos-delay="index*100"
-                    data-aos-anchor=".education-item"
+                    data-aos-anchor="#education-section"
                 >
                     <h3 class="subtitle">{{skill.name}}</h3>
                     <v-row class="pb-5" justify="start">

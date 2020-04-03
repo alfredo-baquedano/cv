@@ -1,6 +1,5 @@
 <template>
   <div
-    class="reference"
     style="overflow-x: auto">
     <v-row justify="center">
       <h1 class="display-1 mb-12">References</h1>
@@ -13,7 +12,6 @@
           class="mx-10 my-1"
           v-for="(reference, index) in references"
           :key="index"
-          v-slot:default="{ active, toggle }"
         >
           <v-card
             class="pa-4"

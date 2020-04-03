@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <div>
     <v-row justify="center">
       <h1 class="display-1 mb-12">Experience</h1>
     </v-row>

@@ -39,12 +39,12 @@
         src="img/background2.jpg"
         gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)">
       </v-img>
-      <About v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="about"/>
-      <Experience v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="experience"/>
-      <Education v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="education"/>
-      <Projects v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="projects"/>
-      <References v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="references"/>
-      <Contact v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="contact"/>
+      <About v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="about-section"/>
+      <Experience v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="experience-section"/>
+      <Education v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="education-section"/>
+      <Projects v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="projects-section"/>
+      <References v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="references-section"/>
+      <Contact v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="contact-section"/>
     </v-content>
   </v-app>
 </template>
@@ -73,37 +73,37 @@ export default {
             disableIntersection: false,
             sections: [
                 {
-                    id: 'about',
+                    id: 'about-section',
                     text: 'About',
                     icon: 'mdi-account',
                     intersectRatio: 0
                 },
                 {
-                    id: 'experience',
+                    id: 'experience-section',
                     text: 'Experience',
                     icon: 'mdi-briefcase',
                     intersectRatio: 0
                 },
                 {
-                    id: 'education',
+                    id: 'education-section',
                     text: 'Skills & Education',
                     icon: 'mdi-school',
                     intersectRatio: 0
                 },
                 {
-                    id: 'projects',
+                    id: 'projects-section',
                     text: 'Projects',
                     icon: 'mdi-file-document-box-multiple',
                     intersectRatio: 0
                 },
                 {
-                    id: 'references',
+                    id: 'references-section',
                     text: 'References',
                     icon: 'mdi-format-quote-close',
                     intersectRatio: 0
                 },
                 {
-                    id: 'contact',
+                    id: 'contact-section',
                     text: 'Contact',
                     icon: 'mdi-email',
                     intersectRatio: 0
