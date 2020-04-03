@@ -39,13 +39,13 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapState } from 'vuex'
 
 export default {
-  computed: mapState({
-    experiences: state => state.person.experiences,
-  }),
-};
+    computed: mapState({
+        experiences: state => state.person.experiences
+    })
+}
 </script>
 <style>
 /*

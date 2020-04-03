@@ -50,84 +50,84 @@
 </template>
 
 <script>
-import Projects from '@/views/Projects.vue';
-import About from '@/views/About.vue';
-import Education from '@/views/Education.vue';
-import Experience from '@/views/Experience.vue';
-import References from '@/views/References.vue';
-import Contact from '@/views/Contact.vue';
+import Projects from '@/views/Projects.vue'
+import About from '@/views/About.vue'
+import Education from '@/views/Education.vue'
+import Experience from '@/views/Experience.vue'
+import References from '@/views/References.vue'
+import Contact from '@/views/Contact.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Projects,
-    About,
-    Education,
-    Experience,
-    References,
-    Contact,
-  },
-  data() {
-    return {
-      selectedSection: undefined,
-      disableIntersection: false,
-      sections: [
-        {
-          id: 'about',
-          text: 'About',
-          icon: 'mdi-account',
-          intersectRatio: 0,
-        },
-        {
-          id: 'experience',
-          text: 'Experience',
-          icon: 'mdi-briefcase',
-          intersectRatio: 0,
-        },
-        {
-          id: 'education',
-          text: 'Skills & Education',
-          icon: 'mdi-school',
-          intersectRatio: 0,
-        },
-        {
-          id: 'projects',
-          text: 'Projects',
-          icon: 'mdi-file-document-box-multiple',
-          intersectRatio: 0,
-        },
-        {
-          id: 'references',
-          text: 'References',
-          icon: 'mdi-format-quote-close',
-          intersectRatio: 0,
-        },
-        {
-          id: 'contact',
-          text: 'Contact',
-          icon: 'mdi-email',
-          intersectRatio: 0,
-        },
-      ],
-    };
-  },
-  methods: {
-    onIntersect(entries, observer, isIntersecting) {
-      if (!this.disableIntersection) {
-        entries.forEach((entrie) => {
-          this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio;
-        });
-        this.selectedSection = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)[0].id;
-      }
+    name: 'App',
+    components: {
+        Projects,
+        About,
+        Education,
+        Experience,
+        References,
+        Contact
     },
-    navToSection(id) {
-      this.disableIntersection = true;
-      this.$vuetify.goTo(`#${id}`).then(() => {
-        this.disableIntersection = false;
-      });
+    data () {
+        return {
+            selectedSection: undefined,
+            disableIntersection: false,
+            sections: [
+                {
+                    id: 'about',
+                    text: 'About',
+                    icon: 'mdi-account',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'experience',
+                    text: 'Experience',
+                    icon: 'mdi-briefcase',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'education',
+                    text: 'Skills & Education',
+                    icon: 'mdi-school',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'projects',
+                    text: 'Projects',
+                    icon: 'mdi-file-document-box-multiple',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'references',
+                    text: 'References',
+                    icon: 'mdi-format-quote-close',
+                    intersectRatio: 0
+                },
+                {
+                    id: 'contact',
+                    text: 'Contact',
+                    icon: 'mdi-email',
+                    intersectRatio: 0
+                }
+            ]
+        }
     },
-  },
-};
+    methods: {
+        onIntersect (entries, observer, isIntersecting) {
+            if (!this.disableIntersection) {
+                entries.forEach((entrie) => {
+                    this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio
+                })
+                this.selectedSection = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)[0].id
+            }
+        },
+        navToSection (id) {
+            this.disableIntersection = true
+            this.$vuetify.goTo(`#${id}`).then(() => {
+                this.disableIntersection = false
+            })
+        }
+    }
+}
 </script>
 <style>
 .active-nav {

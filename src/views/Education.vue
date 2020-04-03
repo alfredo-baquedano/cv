@@ -69,22 +69,22 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapState } from 'vuex'
 
 export default {
-  data: () => ({
-    areSkillsIntersecting: true,
-  }),
-  computed: mapState({
-    skills: state => state.person.skills,
-    educations: state => state.person.education,
-  }),
-  methods: {
-    onSkillsIntersect(entries) {
-      this.areSkillsIntersecting = entries[0].isIntersecting;
-    },
-  },
-};
+    data: () => ({
+        areSkillsIntersecting: true
+    }),
+    computed: mapState({
+        skills: state => state.person.skills,
+        educations: state => state.person.education
+    }),
+    methods: {
+        onSkillsIntersect (entries) {
+            this.areSkillsIntersecting = entries[0].isIntersecting
+        }
+    }
+}
 </script>
 <style>
 .skill-chart-text {

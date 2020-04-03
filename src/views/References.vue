@@ -36,11 +36,11 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapState } from 'vuex'
 
 export default {
-  computed: mapState({
-    references: state => state.person.references,
-  }),
-};
+    computed: mapState({
+        references: state => state.person.references
+    })
+}
 </script>
