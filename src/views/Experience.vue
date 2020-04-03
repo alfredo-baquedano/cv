@@ -7,8 +7,11 @@
       <v-col cols="9" class="pa-5">
         <v-timeline>
           <v-timeline-item
-            v-for="(experience, i) in experiences"
-            :key="i"
+            v-for="(experience, index) in experiences"
+            :key="index"
+            :data-aos="(index % 2 === 0) ? 'fade-left' : 'fade-right'"
+            :data-aos-delay="index*150"
+            data-aos-anchor="#experience-section"
             :color="experience.company.color"
             small
           >
