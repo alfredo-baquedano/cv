@@ -1,5 +1,5 @@
 <template>
-    <div style="height: 600px">
+    <div>
         <v-row justify="center">
             <h1 class="display-1 mb-12">Contact</h1>
         </v-row>
