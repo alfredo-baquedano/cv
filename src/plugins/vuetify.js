@@ -3,7 +3,6 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import es from 'vuetify/es5/locale/es'
 import '@mdi/font/css/materialdesignicons.css'
-import colors from 'vuetify/lib/util/colors'
 
 Vue.use(Vuetify)
 
@@ -15,7 +14,7 @@ export default new Vuetify({
         },
         themes: {
             light: {
-                primary: colors.blue.darken4,
+                primary: '#073e94',
                 secondary: '#424242',
                 accent: '#2E8B57',
                 error: '#FF5252',
