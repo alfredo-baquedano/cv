@@ -70,7 +70,6 @@ export default {
     data () {
         return {
             selectedSection: undefined,
-            disableIntersection: false,
             sections: [
                 {
                     id: 'about-section',
@@ -108,22 +107,30 @@ export default {
                     icon: 'mdi-email',
                     intersectRatio: 0
                 }
-            ]
+            ],
+            navActions: [],
+            navActionsFinished: []
+        }
+    },
+    computed: {
+        disableIntersection: () => {
+            return this.navActions.length === this.navActionsFinished
         }
     },
     methods: {
         onIntersect (entries, observer, isIntersecting) {
+            entries.forEach((entrie) => {
+                this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio
+            })
             if (!this.disableIntersection) {
-                entries.forEach((entrie) => {
-                    this.sections.find(section => section.id === entrie.target.id).intersectRatio = entrie.intersectionRatio
-                })
-                this.selectedSection = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)[0].id
+                const sectionsSortedByIntersectRatio = [...this.sections].sort((sectionA, sectionB) => sectionB.intersectRatio - sectionA.intersectRatio)
+                this.selectedSection = sectionsSortedByIntersectRatio[0].id
             }
         },
         navToSection (id) {
             this.disableIntersection = true
-            this.$vuetify.goTo(`#${id}`).then(() => {
-                this.disableIntersection = false
+            this.navActions.push(this.$vuetify.goTo(`#${id}`)).then(() => {
+                this.navActionsFinished.push(true)
             })
         }
     }
