@@ -113,8 +113,8 @@ export default {
         }
     },
     computed: {
-        disableIntersection: () => {
-            return this.navActions.length === this.navActionsFinished
+        disableIntersection () {
+            return this.navActions.length !== this.navActionsFinished.length
         }
     },
     methods: {
@@ -128,10 +128,9 @@ export default {
             }
         },
         navToSection (id) {
-            this.disableIntersection = true
-            this.navActions.push(this.$vuetify.goTo(`#${id}`)).then(() => {
+            this.navActions.push(this.$vuetify.goTo(`#${id}`).then(() => {
                 this.navActionsFinished.push(true)
-            })
+            }))
         }
     }
 }
