@@ -37,7 +37,7 @@
       <About v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" id="about-section" @contact="navToSection('contact-section')"/>
       <Experience v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="experience-section"/>
       <Education v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="education-section"/>
-      <Projects v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="projects-section"/>
+      <!--<Projects v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="projects-section"/>-->
       <References v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="references-section"/>
       <Contact v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" class="pa-10" id="contact-section"/>
     </v-content>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import Projects from '@/views/Projects.vue'
+// import Projects from '@/views/Projects.vue'
 import About from '@/views/About.vue'
 import Education from '@/views/Education.vue'
 import Experience from '@/views/Experience.vue'
@@ -55,7 +55,7 @@ import Contact from '@/views/Contact.vue'
 export default {
     name: 'App',
     components: {
-        Projects,
+        // Projects,
         About,
         Education,
         Experience,
@@ -84,12 +84,14 @@ export default {
                     icon: 'mdi-school',
                     intersectRatio: 0
                 },
+                /*
                 {
                     id: 'projects-section',
                     text: 'Projects',
                     icon: 'mdi-file-document-box-multiple',
                     intersectRatio: 0
                 },
+                */
                 {
                     id: 'references-section',
                     text: 'References',
