@@ -66,50 +66,60 @@
                     data-aos="fade-left"
                     data-aos-delay="100"
                     data-aos-anchor="#contact-section">
-                <v-card-title>
-                    Contact info
-                </v-card-title>
                     <v-card-text>
                         <v-list dense color="transparent">
-                        <v-list-item>
-                            <v-list-item-avatar>
-                            <v-icon color="primary">mdi-email</v-icon>
-                            </v-list-item-avatar>
-                            <v-list-item-content>
-                            <v-list-item-title>
-                                Email
-                            </v-list-item-title>
-                            <v-list-item-subtitle>
-                                {{ contactInfo.email }}
-                            </v-list-item-subtitle>
-                            </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                            <v-list-item-avatar>
-                            <v-icon color="primary">mdi-phone</v-icon>
-                            </v-list-item-avatar>
-                            <v-list-item-content>
-                            <v-list-item-title>
-                                Phone
-                            </v-list-item-title>
-                            <v-list-item-subtitle>
-                                {{ contactInfo.phone }}
-                            </v-list-item-subtitle>
-                            </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                            <v-list-item-avatar>
-                            <v-icon color="primary">mdi-map-marker</v-icon>
-                            </v-list-item-avatar>
-                            <v-list-item-content>
-                            <v-list-item-title>
-                                Address
-                            </v-list-item-title>
-                            <v-list-item-subtitle>
-                                {{ contactInfo.address }}
-                            </v-list-item-subtitle>
-                            </v-list-item-content>
-                        </v-list-item>
+                            <v-list-item>
+                                <v-list-item-avatar>
+                                    <v-icon color="primary">mdi-email</v-icon>
+                                </v-list-item-avatar>
+                                <v-list-item-content>
+                                    <v-list-item-title>
+                                        Email
+                                    </v-list-item-title>
+                                    <v-list-item-subtitle>
+                                        {{ contactInfo.email }}
+                                    </v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+                            <v-list-item>
+                                <v-list-item-avatar>
+                                    <v-icon color="primary">mdi-phone</v-icon>
+                                </v-list-item-avatar>
+                                <v-list-item-content>
+                                    <v-list-item-title>
+                                        Phone
+                                    </v-list-item-title>
+                                    <v-list-item-subtitle>
+                                        {{ contactInfo.phone }}
+                                    </v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+                            <v-list-item>
+                                <v-list-item-avatar>
+                                    <v-icon color="primary">mdi-calendar</v-icon>
+                                </v-list-item-avatar>
+                                <v-list-item-content>
+                                    <v-list-item-title>
+                                        Date of birth
+                                    </v-list-item-title>
+                                    <v-list-item-subtitle>
+                                        {{ contactInfo.dateOfBirth }}
+                                    </v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+                            <v-list-item>
+                                <v-list-item-avatar>
+                                    <v-icon color="primary">mdi-map-marker</v-icon>
+                                </v-list-item-avatar>
+                                <v-list-item-content>
+                                    <v-list-item-title>
+                                        Address
+                                    </v-list-item-title>
+                                    <v-list-item-subtitle>
+                                        {{ contactInfo.address }}
+                                    </v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
                         </v-list>
                     </v-card-text>
                 </v-card>
