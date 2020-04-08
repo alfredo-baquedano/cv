@@ -10,7 +10,11 @@
         <v-row no-gutters style="position: absolute; bottom: 100px" justify="center" align="center">
             <v-col cols="7">
                 <v-row no-gutters align="center">
-                    <v-col>
+                    <v-col
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                        data-aos-duration="500"
+                        data-aos-anchor="#about-section">
                         <v-card dark color="transparent" elevation="0" style="text-align: right">
                             <v-card-text style="font-size: 3rem"><span :style="'color: '+this.$vuetify.theme.themes.light.primary">ALFREDO</span>BAQUEDANO</v-card-text>
                             <v-card-text>
@@ -19,7 +23,13 @@
                         </v-card>
                     </v-col>
                     <v-divider dark vertical></v-divider>
-                    <v-col class="pa-0" cols="5">
+                    <v-col
+                        class="pa-0"
+                        cols="5"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                        data-aos-duration="500"
+                        data-aos-anchor="#about-section">
                         <v-card dark color="transparent" elevation="0" style="align-self: center">
                             <v-card-text class="pa-0">
                                 <v-list dense color="transparent">
