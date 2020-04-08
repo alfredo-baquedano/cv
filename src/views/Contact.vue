@@ -46,8 +46,28 @@
                                 dense
                                 outlined
                             ></v-textarea>
+                            <v-slide-y-reverse-transition>
+                                <v-btn
+                                    v-if="state === 'error'"
+                                    class="disable-events"
+                                    :key="state"
+                                    rounded
+                                    depressed
+                                    color="error">
+                                    <v-icon left small>mdi-close</v-icon> ERROR
+                                </v-btn>
+                                <v-btn
+                                    v-else-if="state == 'success'"
+                                    class="disable-events"
+                                    :key="state"
+                                    rounded
+                                    depressed
+                                    color="success">
+                                    <v-icon left small>mdi-check</v-icon> MESSAGE SENDED
+                                </v-btn>
                                 <v-btn
                                     class="v-btn--contained"
+                                    v-else
                                     :key="state"
                                     rounded
                                     depressed
@@ -57,6 +77,7 @@
                                     :disabled="loading">
                                     SEND MESSAGE <v-icon right small>mdi-send</v-icon>
                                 </v-btn>
+                            </v-slide-y-reverse-transition>
                         </v-card-text>
                     </v-form>
                 </v-card>
@@ -169,3 +190,8 @@ export default {
     }
 }
 </script>
+<style>
+.disable-events {
+    pointer-events: none
+}
+</style>
