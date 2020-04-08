@@ -16,7 +16,9 @@
                         data-aos-duration="500"
                         data-aos-anchor="#about-section">
                         <v-card dark color="transparent" elevation="0" style="text-align: right">
-                            <v-card-text style="font-size: 3rem"><span :style="'color: '+this.$vuetify.theme.themes.light.primary">ALFREDO</span>BAQUEDANO</v-card-text>
+                            <v-card-text class="text-uppercase" style="font-size: 3rem">
+                                <span :style="'color: '+this.$vuetify.theme.themes.light.primary">{{contactInfo.firstName}}</span>{{contactInfo.lastName}}
+                            </v-card-text>
                             <v-card-text>
                                 {{ profileInfo }}
                             </v-card-text>
@@ -85,10 +87,8 @@
                                         </v-list-item-subtitle>
                                         </v-list-item-content>
                                     </v-list-item>
-                                    <v-list-item>
-                                        <v-card-actions>
-                                            <v-btn rounded class="primary--text" style="align-self: center" color="white" @click="$emit('contact')">CONTACT</v-btn>
-                                        </v-card-actions>
+                                    <v-list-item class="px-7 pt-3">
+                                        <v-btn rounded class="primary--text" style="align-self: center" color="white" @click="$emit('contact')">CONTACT</v-btn>
                                     </v-list-item>
                                 </v-list>
                             </v-card-text>
