@@ -18,7 +18,7 @@ export default new Vuex.Store({
                 github: undefined,
                 facebook: undefined
             },
-            profileInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu mi dapibus, varius purus vitae, dapibus nunc. Curabitur pellentesque varius ante interdum pellentesque. Aenean pretium sollicitudin augue quis gravida. Nunc a varius dolor. Duis at enim ante. Mauris id facilisis nisi. Maecenas sed bibendum sapien. In imperdiet ipsum magna, nec tincidunt tellus pulvinar et. Fusce sit amet porta elit, eget commodo massa. Duis viverra non mi in blandit. Nulla mollis dignissim sem ut sodales. Morbi faucibus leo massa.',
+            profileInfo: 'A Developer with great team work and self-learning skills who loves to master interesting new technologies and use them to code large-scale, challenging and highly innovative projects',
             experiences: [
                 {
                     year: '2018 - Now',
