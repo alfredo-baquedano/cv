@@ -21,30 +21,35 @@
                                 label="Name"
                                 dense
                                 outlined
+                                :rules="rules.name"
                             ></v-text-field>
                             <v-text-field
                                 v-model="message.email"
                                 label="Email"
                                 dense
                                 outlined
+                                :rules="rules.email"
                             ></v-text-field>
                             <v-text-field
                                 v-model="message.company"
                                 label="Company"
                                 dense
                                 outlined
+                                :rules="rules.company"
                             ></v-text-field>
                             <v-text-field
                                 v-model="message.subject"
                                 label="Subject"
                                 dense
                                 outlined
+                                :rules="rules.subject"
                             ></v-text-field>
                             <v-textarea
                                 v-model="message.body"
                                 label="Message"
                                 dense
                                 outlined
+                                :rules="rules.body"
                             ></v-textarea>
                             <v-slide-y-reverse-transition>
                                 <v-btn
@@ -162,6 +167,29 @@ export default {
                 company: '',
                 subject: '',
                 body: ''
+            },
+            rules: {
+                name: [
+                    v => !!v || 'Name is required',
+                    v => v.length < 100 || 'Name must be less than 100 characters'
+                ],
+                email: [
+                    v => !!v || 'E-mail is required',
+                    v => v.length < 200 || 'E-mail must be less than 200 characters',
+                    v => /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]){2,4}$/g.test(v) || 'E-mail must be valid'
+                ],
+                company: [
+                    v => !!v || 'Company is required',
+                    v => v.length < 200 || 'Company must be less than 200 characters'
+                ],
+                subject: [
+                    v => !!v || 'Subject is required',
+                    v => v.length < 200 || 'Subject must be less than 200 characters'
+                ],
+                body: [
+                    v => !!v || 'Body is required',
+                    v => v.length < 1000 || 'Body must be less than 1000 characters'
+                ]
             }
         }
     },
