@@ -27,8 +27,12 @@ export default new Vuex.Store({
                         logo: 'https://yt3.ggpht.com/a-/AAuE7mCc1I1yr1XXHoVmMR9z4Fx7Q_Ykr9I9YX1XiA=s900-mo-c-c0xffffffff-rj-k-no',
                         name: 'Sicom Electronics'
                     },
-                    position: 'Full-stack Developer',
-                    description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    position: 'Full-Stack Developer',
+                    duties: [
+                        'Led the development of a TALQ certified large-scale smart city CMS called CityMesh using Vue.js, Express.js and MongoDB.',
+                        'Built platforms to involve the citizenship in the continuous improvement of their cities using Vue.js, React Native and Lumen.',
+                        'Collaborated in the design of home and industrial IoT projects.'
+                    ]
                 },
                 {
                     year: '2018',
@@ -37,8 +41,10 @@ export default new Vuex.Store({
                         logo: 'http://www.uestatales.cl/cue/sites/default/files/universidades/biobio.jpg?1254970361',
                         name: 'Universidad del Bío-Bío'
                     },
-                    position: 'Teacher',
-                    description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    position: 'Lecturer',
+                    duties: [
+                        'Teach Android Development and Advanced Web APP Development for "Civil Engineers in Informatics" and "Computer Execution Engineer" students.'
+                    ]
                 },
                 {
                     year: '2017 - 2018',
@@ -48,7 +54,11 @@ export default new Vuex.Store({
                         name: 'SmartGrows'
                     },
                     position: 'Full-stack Developer',
-                    description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    duties: [
+                        'Led the development of an environmental standards management system using React.js, MySQL and Slim.',
+                        'Built an 8-relay controller NodeMCU firmware and a Native Android APP to trigger each relay using MQTT.',
+                        'Built 5 prototypes of a wireless ergo spirometer called Oxygen Fitlab using React.js, MQTT, PHP, MySQL and Arduino.'
+                    ]
                 },
                 {
                     year: '2016',
@@ -58,7 +68,10 @@ export default new Vuex.Store({
                         name: 'CIMUBB'
                     },
                     position: 'Intern',
-                    description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+                    duties: [
+                        'Built a Native Android APP to control the movements of a Lego MindStorm NXT Robot using Bluetooth.',
+                        'Collaborated in an open house at the CEAT high school representing the career of Informatic Civil Engineer at the Universidad del Bío-Bío.'
+                    ]
                 }
             ],
             skills: [
