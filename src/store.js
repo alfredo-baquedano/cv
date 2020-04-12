@@ -76,37 +76,37 @@ export default new Vuex.Store({
             ],
             skills: [
                 {
-                    name: 'FrontEnd Web',
+                    name: 'Front-End',
                     knowledges: [
                         {
                             name: 'Vue.js',
-                            value: 88
+                            value: 95
                         },
                         {
                             name: 'React',
+                            value: 85
+                        }
+                    ]
+                },
+                {
+                    name: 'Mobile',
+                    knowledges: [
+                        {
+                            name: 'React\nNative',
+                            value: 80
+                        },
+                        {
+                            name: 'Java',
                             value: 75
                         }
                     ]
                 },
                 {
-                    name: 'FrontEnd Mobile',
-                    knowledges: [
-                        {
-                            name: 'React\nNative',
-                            value: 57
-                        },
-                        {
-                            name: 'Java',
-                            value: 60
-                        }
-                    ]
-                },
-                {
-                    name: 'BackEnd',
+                    name: 'Back-End',
                     knowledges: [
                         {
                             name: 'Lumen',
-                            value: 64
+                            value: 75
                         },
                         {
                             name: 'Express',
@@ -119,11 +119,11 @@ export default new Vuex.Store({
                     knowledges: [
                         {
                             name: 'MySQL',
-                            value: 64
+                            value: 75
                         },
                         {
                             name: 'MongoDB',
-                            value: 34
+                            value: 30
                         }
                     ]
                 },
@@ -132,11 +132,11 @@ export default new Vuex.Store({
                     knowledges: [
                         {
                             name: 'Java',
-                            value: 65
+                            value: 75
                         },
                         {
                             name: 'Python',
-                            value: 23
+                            value: 70
                         }
                     ]
                 },
