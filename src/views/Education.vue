@@ -10,56 +10,58 @@
             <v-col
                 class="pa-12">
                 <v-alert
+                    class="mb-8 pl-2"
                     border="left"
                     colored-border
                     color="primary"
                     elevation="2"
                     v-for="(education, index) in educations"
                     :key="index"
-                    :icon="education.type"
                     data-aos="fade-right"
                     :data-aos-delay="index*100"
                     data-aos-anchor="#education-section"
-                    prominent>
-                <p class="subtitle-2">{{education.name}}</p>
-                <p class="caption">{{education.description}}</p>
+                    >
+                    <template slot="prepend">
+                        <v-icon color="primary" class="ma-4" size="38">{{education.type}}</v-icon>
+                    </template>
+                    <p class="subtitle-2 mb-2">{{education.name}}</p>
+                    <p class="font-italic body-2">{{education.description}}</p>
                 </v-alert>
             </v-col>
             <v-divider inset vertical/>
             <v-col
                 class="pa-12">
                 <v-row
-                no-gutters
-                justify="space-around">
-                <v-col
-                    cols="6"
-                    class="pa-3"
-                    :key="skill.name"
-                    v-for="(skill, index) in skills"
-                    data-aos="fade-left"
-                    :data-aos-delay="index*100"
-                    data-aos-anchor="#education-section"
-                >
-                    <h3 class="subtitle">{{skill.name}}</h3>
-                    <v-row class="pb-5" justify="start">
+                    no-gutters
+                    justify="space-around">
                     <v-col
-                        cols="auto"
-                        class="pa-5"
-                        :key="knowlodge.name"
-                        v-for="knowlodge in skill.knowledges"
-                    >
-                        <v-progress-circular
-                        :rotate="360"
-                        :size="80"
-                        :width="5"
-                        :value="knowlodge.value"
-                        color="primary"
+                        cols="6"
+                        class="pa-3"
+                        :key="skill.name"
+                        v-for="(skill, index) in skills"
+                        data-aos="fade-left"
+                        :data-aos-delay="index*100"
+                        data-aos-anchor="#education-section">
+                        <h3 class="subtitle">{{skill.name}}</h3>
+                        <v-row class="pb-5" justify="start">
+                        <v-col
+                            cols="auto"
+                            class="pa-5"
+                            :key="knowlodge.name"
+                            v-for="knowlodge in skill.knowledges"
                         >
-                        <span class="caption skill-chart-text">{{ knowlodge.name }}</span>
-                        </v-progress-circular>
+                            <v-progress-circular
+                            :rotate="360"
+                            :size="80"
+                            :width="5"
+                            :value="knowlodge.value"
+                            color="primary"
+                            >
+                            <span class="caption skill-chart-text">{{ knowlodge.name }}</span>
+                            </v-progress-circular>
+                        </v-col>
+                        </v-row>
                     </v-col>
-                    </v-row>
-                </v-col>
                 </v-row>
             </v-col>
         </v-row>
