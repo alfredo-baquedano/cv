@@ -184,39 +184,30 @@ export default new Vuex.Store({
             references: [
                 {
                     author: {
-                        firstName: 'Lorem',
-                        lastName: 'ipsum',
-                        position: '',
+                        firstName: 'Carlos',
+                        lastName: 'Araneda',
+                        position: 'CEO at SmartGrows',
                         image: 'img/alfredo.jpg'
                     },
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
+                    text: '...Es un profesional integro, responsable, eficiente, que cumple a cabalidad sus tareas. Siempre estuvo abierto a adoptar nuevas tecnologías, a trabajar en equipo y aprender de quienes tienen mas años de experiencia que el.'
                 },
                 {
                     author: {
-                        firstName: 'Lorem',
-                        lastName: 'ipsum',
-                        position: '',
+                        firstName: 'Brunny',
+                        lastName: 'Troncoso',
+                        position: 'Principal at Universidad del Bío-Bío',
                         image: 'img/alfredo.jpg'
                     },
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
+                    text: '...Ha demostrado a lo largo de los años una gran dedicación a los proyectos de desarrollo tecnológico y de innovación ...destaca además por contribuir a un buen clima laboral y buena disposicion.'
                 },
                 {
                     author: {
-                        firstName: 'Lorem',
-                        lastName: 'ipsum',
-                        position: '',
+                        firstName: 'Luis',
+                        lastName: 'Vera',
+                        position: 'Support Engineer and Laboratory Coordinator at CIMUBB',
                         image: 'img/alfredo.jpg'
                     },
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
-                },
-                {
-                    author: {
-                        firstName: 'Lorem',
-                        lastName: 'ipsum',
-                        position: '',
-                        image: 'img/alfredo.jpg'
-                    },
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
+                    text: 'Buena disposicion, respeta horarios y compromiso con la misión encomendada. Propone soluciones alternativas a problemas encontrados. Demuestra interés y entusiasmo en la ejecución del proyecto más alla de lo comprometido.'
                 }
             ]
         }
