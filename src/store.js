@@ -157,28 +157,28 @@ export default new Vuex.Store({
             projects: [],
             education: [
                 {
-                    name: 'Lorem ipsum',
-                    type: 'mdi-school',
-                    date: '',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
-                },
-                {
-                    name: 'Lorem ipsum',
-                    type: 'mdi-school',
-                    date: '',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
-                },
-                {
-                    name: 'Lorem ipsum',
+                    name: 'First Place in “Do i+T”',
                     type: 'mdi-certificate',
-                    date: '',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
+                    date: '2018',
+                    description: 'Certified by MacroFacultad of Universidad del Bío-Bío and WorkingPlace by the project Oxygen FitLab.'
                 },
                 {
-                    name: 'Lorem ipsum',
+                    name: 'Outstanding Collaboration Diploma',
+                    type: 'mdi-school',
+                    date: '2018',
+                    description: 'For working as a part-time lecturer at the Universidad del Bío-Bío.'
+                },
+                {
+                    name: 'English Intermediate ',
                     type: 'mdi-certificate',
-                    date: '',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id lorem scelerisque nibh congue consectetur ut eget elit. Curabitur facilisis justo et facilisis ultrices'
+                    date: '2017',
+                    description: 'ETS TOEIC Bridge Level B1 (at least).'
+                },
+                {
+                    name: 'Effective Communication ',
+                    type: 'mdi-certificate',
+                    date: '2016',
+                    description: 'Certified by Universidad del Bío-Bío.'
                 }
             ],
             references: [
