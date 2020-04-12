@@ -15,20 +15,27 @@
                     data-aos="fade-left"
                     :data-aos-delay="index*100"
                     data-aos-anchor="#references-section">
-                    <v-card
-                    class="pa-4"
-                    width="500">
-                    <v-card-text class="font-italic font-weight-light">
-                        <v-icon x-large color="primary">mdi-format-quote-close</v-icon>
-                        <br/>
-                        {{ reference.text }}
-                    </v-card-text>
-                    <v-card-text color="primary" class="font-italic font-weight-bold text-right">
-                        {{ reference.author.firstName }} {{ reference.author.lastName }}
-                        <v-avatar>
-                        <img :src="reference.author.image">
-                        </v-avatar>
-                    </v-card-text>
+                    <v-card width="500">
+                        <v-row
+                            class="pa-6 fill-height"
+                            no-gutters>
+                            <v-col cols="12" class="pa-0">
+                                <v-icon class="mb-3" x-large color="primary">
+                                    mdi-format-quote-close
+                                </v-icon>
+                                <p class="font-italic font-weight-light">
+                                    {{ reference.text }}
+                                </p>
+                            </v-col>
+                            <v-col cols="12" class="pa-0" align-self="end">
+                                <p class="text-right mb-0">
+                                    {{ reference.author.firstName }} {{ reference.author.lastName }}
+                                </p>
+                                <p class="mb-0 font-italic font-weight-light caption text-right">
+                                    {{ reference.author.position }}
+                                </p>
+                            </v-col>
+                        </v-row>
                     </v-card>
                 </v-slide-item>
             </v-slide-group>
