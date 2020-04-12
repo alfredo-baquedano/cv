@@ -4,12 +4,12 @@
       <v-row justify="center" no-gutters class="pt-5">
         <v-avatar class="my-4" size="96">
           <img
-            :src="'img/alfredo.jpg'"
+            :src="contactInfo.image"
             alt="Alfredo">
         </v-avatar>
         <v-row justify="center" class="my-4">
-          <span class="title white--text">Alfredo Baquedano</span><br/>
-          <span class="subtitle white--text">Full-stack Developer</span>
+          <span class="title white--text">{{ contactInfo.firstName }} {{ contactInfo.lastName }}</span><br/>
+          <span class="subtitle white--text">{{ contactInfo.position }}</span>
         </v-row>
       </v-row>
       <v-list shaped dark dense class="pr-6">
@@ -51,6 +51,7 @@ import Education from '@/views/Education.vue'
 import Experience from '@/views/Experience.vue'
 import References from '@/views/References.vue'
 import Contact from '@/views/Contact.vue'
+import { mapState } from 'vuex'
 
 export default {
     name: 'App',
@@ -110,6 +111,9 @@ export default {
         }
     },
     computed: {
+        ...mapState({
+            contactInfo: state => state.person.contactInfo
+        }),
         disableIntersection () {
             return this.navActions.length !== this.navActionsFinished.length
         }
