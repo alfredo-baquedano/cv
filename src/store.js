@@ -13,7 +13,7 @@ export default new Vuex.Store({
                 email: 'alfredo.baquedano.c@gmal.com',
                 phone: '+569 8443 3012',
                 address: 'Manuel Bayón 3273, Talcahuano, Chile',
-                dateOfBirth: '05/06/1993',
+                dateOfBirth: '5 June 1993',
                 linkedin: undefined,
                 github: undefined,
                 facebook: undefined
