@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4bda7d0dc2aabaef4d79",
-    "url": "/resume/css/app.dadb239c.css"
+    "revision": "3fcd9672be8924792ec3",
+    "url": "/resume/css/app.7a5e0f75.css"
   },
   {
-    "revision": "4bda7d0dc2aabaef4d79",
-    "url": "/resume/js/app.e0776090.js"
+    "revision": "3fcd9672be8924792ec3",
+    "url": "/resume/js/app.10777f5b.js"
   },
   {
     "revision": "90ba4a42e5bc8d1decab",
@@ -40,6 +40,10 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-Thin.ad538a69.woff2"
   },
   {
+    "revision": "5b4a33e176ff736a74f0ca2dd9e6b396",
+    "url": "/resume/fonts/Roboto-ThinItalic.5b4a33e1.woff2"
+  },
+  {
     "revision": "c73eb1ceba3321a80a0aff13ad373cb4",
     "url": "/resume/fonts/Roboto-Light.c73eb1ce.woff"
   },
@@ -48,20 +52,12 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-Light.d26871e8.woff2"
   },
   {
-    "revision": "8a96edbbcd9a6991d79371aed0b0288e",
-    "url": "/resume/fonts/Roboto-ThinItalic.8a96edbb.woff"
-  },
-  {
-    "revision": "5b4a33e176ff736a74f0ca2dd9e6b396",
-    "url": "/resume/fonts/Roboto-ThinItalic.5b4a33e1.woff2"
-  },
-  {
     "revision": "e8eaae902c3a4dacb9a5062667e10576",
     "url": "/resume/fonts/Roboto-LightItalic.e8eaae90.woff2"
   },
   {
-    "revision": "73f0a88bbca1bec19fb1303c689d04c6",
-    "url": "/resume/fonts/Roboto-Regular.73f0a88b.woff2"
+    "revision": "8a96edbbcd9a6991d79371aed0b0288e",
+    "url": "/resume/fonts/Roboto-ThinItalic.8a96edbb.woff"
   },
   {
     "revision": "13efe6cbc10b97144a28310ebdeda594",
@@ -70,6 +66,10 @@ self.__precacheManifest = [
   {
     "revision": "35b07eb2f8711ae08d1f58c043880930",
     "url": "/resume/fonts/Roboto-Regular.35b07eb2.woff"
+  },
+  {
+    "revision": "73f0a88bbca1bec19fb1303c689d04c6",
+    "url": "/resume/fonts/Roboto-Regular.73f0a88b.woff2"
   },
   {
     "revision": "f5902d5ef961717ed263902fc429e6ae",
@@ -84,6 +84,10 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-Medium.90d16760.woff2"
   },
   {
+    "revision": "83e114c316fcc3f23f524ec3e1c65984",
+    "url": "/resume/fonts/Roboto-MediumItalic.83e114c3.woff"
+  },
+  {
     "revision": "13ec0eb5bdb821ff4930237d7c9f943f",
     "url": "/resume/fonts/Roboto-MediumItalic.13ec0eb5.woff2"
   },
@@ -92,24 +96,24 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-Medium.1d659482.woff"
   },
   {
-    "revision": "83e114c316fcc3f23f524ec3e1c65984",
-    "url": "/resume/fonts/Roboto-MediumItalic.83e114c3.woff"
+    "revision": "b52fac2bb93c5858f3f2675e4b52e1de",
+    "url": "/resume/fonts/Roboto-Bold.b52fac2b.woff2"
+  },
+  {
+    "revision": "94008e69aaf05da75c0bbf8f8bb0db41",
+    "url": "/resume/fonts/Roboto-BoldItalic.94008e69.woff2"
   },
   {
     "revision": "50d75e48e0a3ddab1dd15d6bfb9d3700",
     "url": "/resume/fonts/Roboto-Bold.50d75e48.woff"
   },
   {
-    "revision": "b52fac2bb93c5858f3f2675e4b52e1de",
-    "url": "/resume/fonts/Roboto-Bold.b52fac2b.woff2"
-  },
-  {
     "revision": "4fe0f73cc919ba2b7a3c36e4540d725c",
     "url": "/resume/fonts/Roboto-BoldItalic.4fe0f73c.woff"
   },
   {
-    "revision": "94008e69aaf05da75c0bbf8f8bb0db41",
-    "url": "/resume/fonts/Roboto-BoldItalic.94008e69.woff2"
+    "revision": "313a65630d341645c13e4f2a0364381d",
+    "url": "/resume/fonts/Roboto-Black.313a6563.woff"
   },
   {
     "revision": "59eb3601394dd87f30f82433fb39dd94",
@@ -124,28 +128,40 @@ self.__precacheManifest = [
     "url": "/resume/fonts/Roboto-BlackItalic.f75569f8.woff2"
   },
   {
-    "revision": "313a65630d341645c13e4f2a0364381d",
-    "url": "/resume/fonts/Roboto-Black.313a6563.woff"
-  },
-  {
-    "revision": "a5b7172d2990d0b2ad250883715ec317",
+    "revision": "751fc405fab65990360bbad53cdbed33",
     "url": "/resume/index.html"
-  },
-  {
-    "revision": "ab3b390fb2c22f1c717fbdbf73cbf17a",
-    "url": "/resume/img/alfredo.jpg"
   },
   {
     "revision": "c605149464693d072d4e2e15aba48ece",
     "url": "/resume/img/background.jpg"
   },
   {
+    "revision": "f255b805ef8718a5b2527dba1257c9aa",
+    "url": "/resume/img/alfredo.jpg"
+  },
+  {
     "revision": "62c5c69d8ee0f3d1bdf62b26c917bd59",
     "url": "/resume/img/background2.jpg"
   },
   {
+    "revision": "5bf58c0d0042b343065d7f01c0281435",
+    "url": "/resume/img/logos/cimubb.png"
+  },
+  {
+    "revision": "473ce830f2759708b8933e4eb537a43e",
+    "url": "/resume/img/logos/sicom.png"
+  },
+  {
+    "revision": "47da3ccffa2fa28a8152d8bd85176054",
+    "url": "/resume/img/logos/smartgrows.png"
+  },
+  {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/resume/robots.txt"
+  },
+  {
+    "revision": "81f44fba0ba240e518978a13884650f4",
+    "url": "/resume/img/logos/ubb.png"
   },
   {
     "revision": "4d078e046be7b55a7b1f827e9e61417a",
