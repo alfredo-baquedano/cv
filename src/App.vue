@@ -38,7 +38,7 @@
                     </v-list>
                 </v-col>
                 <v-col cols="12" align-self="end">
-                    <v-row class="py-4" justify="center">
+                    <v-row no-gutters class="py-4" justify="center">
                         <v-btn :href="contactInfo.linkedin" icon small target="_blank">
                             <v-icon small color="white">mdi-linkedin</v-icon>
                         </v-btn>
