@@ -15,9 +15,9 @@ export default new Vuex.Store({
                 phone: '+569 8443 3012',
                 address: 'Manuel Bayón 3273, Talcahuano, Chile',
                 dateOfBirth: '5 June 1993',
-                linkedin: undefined,
-                github: undefined,
-                facebook: undefined
+                linkedin: 'https://www.linkedin.com/in/alfredo-baquedano/',
+                github: 'https://github.com/alfredo-baquedano',
+                stackoverflow: 'https://stackoverflow.com/users/8777500'
             },
             profileInfo: 'A Developer with great team work and self-learning skills who loves to master interesting new technologies and use them to code large-scale, challenging and highly innovative projects',
             experiences: [

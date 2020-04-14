@@ -1,37 +1,56 @@
 <template>
     <v-app dark>
         <v-navigation-drawer class="navigation-drawer-gradint" color="primary" app>
-            <v-row justify="center" no-gutters class="pt-5">
-                <v-avatar class="my-4" size="96">
-                <img
-                    :src="contactInfo.image"
-                    alt="Alfredo">
-                </v-avatar>
-                <v-row justify="center" class="my-4">
-                <span class="title white--text">{{ contactInfo.firstName }} {{ contactInfo.lastName }}</span><br/>
-                <span class="subtitle white--text">{{ contactInfo.position }}</span>
-                </v-row>
+            <v-row no-gutters class="fill-height">
+                <v-col cols="12"  align-self="center">
+                    <v-row justify="center" no-gutters>
+                        <v-avatar class="my-4" size="96">
+                        <img
+                            :src="contactInfo.image"
+                            alt="Alfredo">
+                        </v-avatar>
+                        <v-row justify="center" class="my-4">
+                        <span class="title white--text">{{ contactInfo.firstName }} {{ contactInfo.lastName }}</span><br/>
+                        <span class="subtitle white--text">{{ contactInfo.position }}</span>
+                        </v-row>
+                    </v-row>
+                </v-col>
+                <v-col cols="12" align-self="center">
+                    <v-list shaped dark dense class="pr-6">
+                        <v-list-item-group
+                            mandatory
+                            :value="selectedSection"
+                            active-class="active-nav">
+                            <v-list-item
+                                class="my-3 py-1"
+                                v-for="(item) in sections"
+                                :key="item.id"
+                                :value="item.id"
+                                @click="navToSection(item.id)">
+                                <v-list-item-icon>
+                                <v-icon v-text="item.icon"></v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                <v-list-item-title v-text="item.text"></v-list-item-title>
+                                </v-list-item-content>
+                        </v-list-item>
+                        </v-list-item-group>
+                    </v-list>
+                </v-col>
+                <v-col cols="12" align-self="end">
+                    <v-row class="py-4" justify="center">
+                        <v-btn :href="contactInfo.linkedin" icon small target="_blank">
+                            <v-icon small color="white">mdi-linkedin</v-icon>
+                        </v-btn>
+                        <v-btn :href="contactInfo.github" icon small target="_blank">
+                            <v-icon small color="white">mdi-github-circle</v-icon>
+                        </v-btn>
+                        <v-btn :href="contactInfo.stackoverflow" icon small target="_blank">
+                            <v-icon small color="white">mdi-stack-overflow</v-icon>
+                        </v-btn>
+                    </v-row>
+                </v-col>
             </v-row>
-            <v-list shaped dark dense class="pr-6">
-                <v-list-item-group
-                mandatory
-                :value="selectedSection"
-                active-class="active-nav">
-                <v-list-item
-                    class="my-3 py-1"
-                    v-for="(item) in sections"
-                    :key="item.id"
-                    :value="item.id"
-                    @click="navToSection(item.id)">
-                    <v-list-item-icon>
-                    <v-icon v-text="item.icon"></v-icon>
-                    </v-list-item-icon>
-                    <v-list-item-content>
-                    <v-list-item-title v-text="item.text"></v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-                </v-list-item-group>
-            </v-list>
         </v-navigation-drawer>
         <v-content>
             <About v-intersect="{ handler: onIntersect, options: { threshold: [0, 0.25, 0.5, 0.75, 1] }}" id="about-section" @contact="navToSection('contact-section')"/>
