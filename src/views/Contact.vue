@@ -3,10 +3,11 @@
         <v-row justify="center">
             <h1 class="display-1 mb-12">Contact</h1>
         </v-row>
-        <v-row no-gutters justify="center" class="px-12 pb-12">
+        <v-row no-gutters justify="center" class="px-md-12 px-4 pb-0 pb-md-12">
             <v-col
-                cols="7"
-                class="px-12"
+                cols="12"
+                md="7"
+                class="px-md-12"
                 data-aos="fade-right"
                 data-aos-delay="100"
                 data-aos-anchor="#contact-section">
@@ -87,7 +88,12 @@
                     </v-form>
                 </v-card>
             </v-col>
-            <v-col cols="5" class="px-12">
+            <v-col
+                order="first"
+                order-md="last"
+                cols="12"
+                md="5"
+                class="px-md-12 pb-4 pb-md-0">
                 <v-card
                     data-aos="fade-left"
                     data-aos-delay="100"
