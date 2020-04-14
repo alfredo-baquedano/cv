@@ -25,7 +25,7 @@ export default new Vuex.Store({
                     year: '2018 - Now',
                     company: {
                         color: 'red',
-                        logo: '/img/logos/sicom.png',
+                        logo: './img/logos/sicom.png',
                         name: 'Sicom Electronics'
                     },
                     position: 'Full-Stack Developer',
@@ -39,7 +39,7 @@ export default new Vuex.Store({
                     year: '2018',
                     company: {
                         color: 'blue',
-                        logo: '/img/logos/smartgrows.png',
+                        logo: './img/logos/smartgrows.png',
                         name: 'Universidad del Bío-Bío'
                     },
                     position: 'Lecturer',
@@ -51,7 +51,7 @@ export default new Vuex.Store({
                     year: '2017 - 2018',
                     company: {
                         color: 'green',
-                        logo: '/img/logos/ubb.png',
+                        logo: './img/logos/ubb.png',
                         name: 'SmartGrows'
                     },
                     position: 'Full-stack Developer',
@@ -65,7 +65,7 @@ export default new Vuex.Store({
                     year: '2016',
                     company: {
                         color: 'cyan',
-                        logo: '/img/logos/cimubb.png',
+                        logo: './img/logos/cimubb.png',
                         name: 'CIMUBB'
                     },
                     position: 'Intern',
