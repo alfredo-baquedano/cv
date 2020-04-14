@@ -1,6 +1,6 @@
 <template>
     <div class="justify-center">
-        <v-row justify="center">
+        <v-row no-gutters justify="center">
             <h1 class="display-1 mb-12">Skills & Education</h1>
         </v-row>
         <v-row no-gutters justify="center">
@@ -12,7 +12,7 @@
                     <v-col
                         cols="12"
                         :md="true"
-                        class="px-6 px-md-12">
+                        class="px-4 px-md-12">
                         <v-alert
                             class="my-8 pl-2"
                             border="left"
@@ -35,7 +35,7 @@
                     <v-col
                         cols="12"
                         :md="true"
-                        class="px-6 px-md-12">
+                        class="px-4 px-md-12">
                         <v-row
                             no-gutters
                             justify="space-around">

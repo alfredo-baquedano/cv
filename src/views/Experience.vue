@@ -1,10 +1,10 @@
 <template>
     <div>
-        <v-row justify="center">
+        <v-row no-gutters justify="center">
             <h1 class="display-1 mb-12">Experience</h1>
         </v-row>
         <v-row no-gutters justify="center">
-            <v-col class="experience-section-width pa-md-5 pa-0">
+            <v-col class="experience-section-width pa-md-5 pr-4">
                 <v-timeline left :dense="$vuetify.breakpoint.smAndDown">
                     <v-timeline-item
                         v-for="(experience, index) in experiences"

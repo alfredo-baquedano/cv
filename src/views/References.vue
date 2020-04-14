@@ -1,7 +1,7 @@
 <template>
     <div
         style="overflow-x: auto">
-        <v-row justify="center">
+        <v-row no-gutters justify="center">
             <h1 class="display-1 mb-12">References</h1>
         </v-row>
         <v-row no-gutters class="px-md-12">
