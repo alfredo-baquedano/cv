@@ -154,5 +154,4 @@ export default {
 .navigation-drawer-gradint {
     background: linear-gradient(to bottom right, #073e94, #022761)
 }
-
 </style>
