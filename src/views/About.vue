@@ -7,17 +7,19 @@
                 gradient="to bottom, rgba(100,115,201,.33), rgba(25,32,72,.6)">
             </v-img>
         </div>
-        <v-row no-gutters style="position: absolute; bottom: 100px" justify="center" align="center">
-            <v-col cols="7">
+        <v-row no-gutters style="width: 100%; position: absolute; bottom: 100px" justify="center" align="center">
+            <v-col class="about-info">
                 <v-row no-gutters align="center">
                     <v-col
+                        md="7"
+                        sm="12"
                         data-aos="fade-right"
                         data-aos-delay="200"
                         data-aos-duration="500"
                         data-aos-anchor="#about-section">
-                        <v-card dark color="transparent" elevation="0" style="text-align: right">
-                            <v-card-text class="text-uppercase" style="font-size: 3rem">
-                                <span :style="'color: '+this.$vuetify.theme.themes.light.primary">{{contactInfo.firstName}}</span>{{contactInfo.lastName}}
+                        <v-card class="text-sm-ledt text-md-right" dark color="transparent" elevation="0">
+                            <v-card-text class="text-uppercase" style="font-size: 3rem; line-height: 2.2rem">
+                                <span :style="'color: '+this.$vuetify.theme.themes.light.primary">{{contactInfo.firstName}}</span><br v-if="$vuetify.breakpoint.smAndDown"/>{{contactInfo.lastName}}
                             </v-card-text>
                             <v-card-text>
                                 {{ profileInfo }}
@@ -27,7 +29,6 @@
                     <v-divider dark vertical></v-divider>
                     <v-col
                         class="pa-0"
-                        cols="5"
                         data-aos="fade-left"
                         data-aos-delay="200"
                         data-aos-duration="500"
@@ -87,8 +88,8 @@
                                         </v-list-item-subtitle>
                                         </v-list-item-content>
                                     </v-list-item>
-                                    <v-list-item class="px-7 pt-3">
-                                        <v-btn rounded class="primary--text" style="align-self: center" color="white" @click="$emit('contact')">CONTACT</v-btn>
+                                    <v-list-item class="px-7 pt-3 justify-center justify-md-start">
+                                        <v-btn rounded class="primary--text" color="white" @click="$emit('contact')">CONTACT</v-btn>
                                     </v-list-item>
                                 </v-list>
                             </v-card-text>
@@ -110,8 +111,11 @@ export default {
 }
 </script>
 <style>
- .background-image {
+.background-image {
     filter: blur(3px) grayscale(40%);
     height: 100vh;
+}
+.about-info {
+    max-width: 900px !important;
 }
 </style>

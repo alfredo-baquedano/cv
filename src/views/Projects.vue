@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row justify="center">
+    <v-row no-gutters justify="center">
       <h1 class="display-1 mb-12">Projects</h1>
     </v-row>
     <v-row no-gutters class="px-12">
