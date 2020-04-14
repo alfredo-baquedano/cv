@@ -129,7 +129,7 @@ export default new Vuex.Store({
                     ]
                 },
                 {
-                    name: 'Other Programming Languages',
+                    name: 'Other Languages',
                     knowledges: [
                         {
                             name: 'Java',
