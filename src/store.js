@@ -39,7 +39,7 @@ export default new Vuex.Store({
                     year: '2018',
                     company: {
                         color: 'blue',
-                        logo: './img/logos/smartgrows.png',
+                        logo: './img/logos/ubb.png',
                         name: 'Universidad del Bío-Bío'
                     },
                     position: 'Lecturer',
@@ -51,7 +51,7 @@ export default new Vuex.Store({
                     year: '2017 - 2018',
                     company: {
                         color: 'green',
-                        logo: './img/logos/ubb.png',
+                        logo: './img/logos/smartgrows.png',
                         name: 'SmartGrows'
                     },
                     position: 'Full-stack Developer',
