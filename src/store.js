@@ -54,7 +54,7 @@ export default new Vuex.Store({
                         logo: './img/logos/smartgrows.png',
                         name: 'SmartGrows'
                     },
-                    position: 'Full-stack Developer',
+                    position: 'Full-Stack Developer',
                     duties: [
                         'Led the development of an environmental standards management system using React.js, MySQL and Slim.',
                         'Built an 8-relay controller NodeMCU firmware and a Native Android APP to trigger each relay using MQTT.',
